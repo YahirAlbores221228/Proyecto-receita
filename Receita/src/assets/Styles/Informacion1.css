@@ -1,0 +1,27 @@
+.Container-informacion{
+display: flex;
+background-color: rgb(244, 244, 244);
+text-align: center;
+align-items: center;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+line-height: 36px;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+.Container-titulo{
+display: flex;
+flex-direction: column;
+width: 50%;
+}
+.Parrafo1{
+font-size: 25px;
+}
+.Parrafo2{
+font-size: 16px;
+line-height: 24px;
+}
+.Ilustracion{
+
+}

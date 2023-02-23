@@ -1,17 +1,18 @@
 import Tituloreceita from "../Title";
+import '../../../assets/Styles/Informacion1.css'
 import ILustracion1 from "../Ilustracion1";
 function Sectioninformacion() {
     return ( 
 <>
-<div>
+<div className="Container-informacion"> 
+<div className="Container-titulo">
 <Tituloreceita msn="RECEITA"></Tituloreceita>
-<p>Es un aplicativo donde podras ver los restaurnates y recetas que ofrecen, para poder preparar un mejor platillo y conocer la gastronomia mexicana</p>
+<p className="Parrafo1">Es un aplicativo donde podras ver los restaurnates y recetas que ofrecen, para poder preparar un mejor platillo y conocer la gastronomia mexicana</p>
+<p className="Parrafo2">Atrevete a explorar los sabores mas autenticos de nuestro pais con nuestra aplicacion</p>
 </div>
-<div>
-<p>Atrevete a explorar los sabores mas autenticos de nuestro pais con nuestra aplicacion</p>
-</div>
-<div>
+<div className="Ilustracion">
 <ILustracion1/>
+</div>
 </div>
 </>
  );
