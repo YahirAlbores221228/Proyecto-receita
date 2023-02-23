@@ -1,6 +1,6 @@
 
 footer{
-background-color:#E6A362;
+background-color:#ddc4ab;
 font-family: 'Roboto';
 font-style: italic;
 font-weight: 400px;
@@ -38,6 +38,7 @@ text-align: center;
 .Logo-oxxo{
 width: auto;
 height: 50px;
+margin: 10px;
 }
 label:hover{
 color: white;

@@ -1,6 +1,10 @@
 import '../../../assets/Styles/Footer.css'
 import Logo from '../../../assets/Img/Logo.png'
 import oxxo from '../../../assets/Img/Logo-oxxo.png'
+import palapa from '../../../assets/Img/Logo-palapa.png'
+import terburmex from '../../../assets/Img/Logo-terburmex.png'
+import casayucatan from '../../../assets/Img/Logo-casayucatan.png'
+import flamas from '../../../assets/Img/Logo-flamas.png'
 function Footer() {
     return (  
 
@@ -9,7 +13,7 @@ function Footer() {
 
 <div className='Container-logo'>
 <img className='Footer-logo' src={Logo} alt="" />
-<p>El mejor sabor esta en mexico!</p>
+<p>El mejor sabor esta en México!</p>
 </div>
 
 <div className='Container-empresa'>
@@ -33,6 +37,10 @@ function Footer() {
 <label >Logo</label>
 <label >Logo</label>
 <h4>MARCA ASOCIADAS</h4>
+<img className='Logo-oxxo' src={palapa} alt="" />
+<img className='Logo-oxxo' src={terburmex} alt="" />
+<img className='Logo-oxxo' src={casayucatan} alt="" />
+<img className='Logo-oxxo' src={flamas} alt="" />
 </div>
 </div>
 </footer>
