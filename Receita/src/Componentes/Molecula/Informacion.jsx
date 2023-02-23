@@ -1,6 +1,6 @@
-import Tituloreceita from "../Title";
-import '../../../assets/Styles/Informacion1.css'
-import ILustracion1 from "../Ilustracion1";
+import Tituloreceita from "../Atomos/Title";
+import '../../assets/Styles/Informacion1.css'
+import ILustracion1 from "../Atomos/Ilustracion1";
 function Sectioninformacion() {
     return ( 
 <>
@@ -13,6 +13,7 @@ function Sectioninformacion() {
 <div className="Ilustracion">
 <ILustracion1/>
 </div>
+
 </div>
 </>
  );

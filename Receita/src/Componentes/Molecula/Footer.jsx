@@ -1,10 +1,10 @@
-import '../../../assets/Styles/Footer.css'
-import Logo from '../../../assets/Img/Logo.png'
-import oxxo from '../../../assets/Img/Logo-oxxo.png'
-import palapa from '../../../assets/Img/Logo-palapa.png'
-import terburmex from '../../../assets/Img/Logo-terburmex.png'
-import casayucatan from '../../../assets/Img/Logo-casayucatan.png'
-import flamas from '../../../assets/Img/Logo-flamas.png'
+import '../../assets/Styles/Footer.css'
+import Logo from '../../assets/Img/Logo.png'
+import oxxo from '../../assets/Img/Logo-oxxo.png'
+import palapa from '../../assets/Img/Logo-palapa.png'
+import terburmex from '../../assets/Img/Logo-terburmex.png'
+import casayucatan from '../../assets/Img/Logo-casayucatan.png'
+import flamas from '../../assets/Img/Logo-flamas.png'
 function Footer() {
     return (  
 

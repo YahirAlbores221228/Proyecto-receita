@@ -1,5 +1,5 @@
-import Ilustracion2 from "../Ilustracion2";
-import '../../../assets/Styles/Informacion2.css'
+import Ilustracion2 from "../Atomos/Ilustracion2";
+import '../../assets/Styles/Informacion2.css'
 function Informacion2() {
     return (  
 

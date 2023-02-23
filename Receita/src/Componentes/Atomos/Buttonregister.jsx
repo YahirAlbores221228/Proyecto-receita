@@ -3,7 +3,7 @@ function Buttonregister({Texto}) {
     return (
 <div className='Container-button'>
 <div className='Container-hijo'>
-<p>{Texto}</p>
+<button>{Texto}</button>
 </div>
 </div> 
  );
