@@ -6,7 +6,12 @@ import terburmex from '../../assets/Img/Logo-terburmex.png'
 import casayucatan from '../../assets/Img/Logo-casayucatan.png'
 import flamas from '../../assets/Img/Logo-flamas.png'
 import Subtitulo from '../Atomos/Subtituloh4'
-function Footer() {
+
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+function Footer(){
     return (  
 <footer>
 <div className='Container-padre'>
@@ -26,12 +31,25 @@ function Footer() {
 <h4>METODO DE PAGO</h4>
 <img className='Logo-asociadas' src={oxxo} alt="" />
 </div>
+
 <div>
+
 <Subtitulo Subtitulo="REDES SOCIALES"/>
-<label >Logo</label>
-<label >Logo</label>
-<label >Logo</label>
-<label >Logo</label>
+<div className='Container-redes'>
+<div>
+<FaInstagram className='Redes'/>
+</div>
+<div>
+<FaFacebook className='Redes'/>
+</div>
+<div>
+<FaPhoneAlt className='Redes'/>
+</div>
+<div>
+<FaTwitter className='Redes'/>
+</div>
+</div>
+
 <Subtitulo Subtitulo="MARCAS ASOCIADAS"/>
 <img className='Logo-asociadas' src={palapa} alt="" />
 <img className='Logo-asociadas' src={terburmex} alt="" />
