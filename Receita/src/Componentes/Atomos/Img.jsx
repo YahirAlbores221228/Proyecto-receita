@@ -5,12 +5,16 @@ function Imagen() {
     return ( 
 <>
 <nav className="Container-nav">
-<img className="Presentacion" src={Presentacion} />
-<div className="Container-h1">
+<div>
 <h1>LA CASA DEL VERDADERO PLACER</h1>
-</div>
-</nav>
+<div>
 <Buttonregister className="Button" Texto="Registrarme"></Buttonregister>
+</div>
+</div>
+
+
+</nav>
+
 </>
  );
 }

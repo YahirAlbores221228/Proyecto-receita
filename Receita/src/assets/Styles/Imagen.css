@@ -1,21 +1,20 @@
-.Presentacion{
-width: 100%;
-height: 550px;
-}
-.Container-h1{
-border: 6px solid #E6A362;
-text-align: center;
-position: absolute;
-}
+
 .Container-nav{
 display: flex;
 align-items: center;
 justify-content: center;
+text-align: center;
 font-family: 'Roboto';
 font-style: normal;
-font-size:40px;
+font-size:50px;
+height: 80vh;
 color: #000000 ;
 border: 1px none;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+background: url(../Img/Verdura.jpg) no-repeat;
+background-size: cover;
+text-shadow: 10px 15px 10px rgba(255, 162, 0, 0.83);
 }
+
+
+
 

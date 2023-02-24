@@ -1,25 +1,22 @@
 .Container-header{
-background-color: #EEBD89;
-height: 90px;
+background-color: #eebd899c;
+height: 100%;
 display: flex;
 align-items: center;
-justify-content: flex-end;
+justify-content: space-around;
 font-family: 'Roboto';
-font-style: italic;
-font-size: 18px;
 font-weight: 600;
 }
-.Container-header nav{
-display: flex;
-text-decoration: none;
+.Label{
+font-size: 30px;
 }
-.Container-header nav li{
+.Container-header div Label{
 list-style: none;
 padding: 13px;
 cursor: pointer;
 position: relative;
 }
-.Container-header nav li::after{
+.Container-header div Label::after{
 content: " ";
 position:absolute;
 bottom: 0;
@@ -31,27 +28,24 @@ background-color:#FFF1D7;
 border-radius:10px;
 transition: transform 0.25s ease-out;
 }
-.Container-header nav li:hover::after{
+.Container-header div Label:hover::after{
 transform: scaleX(1);
 transform-origin: bottom left;
 }
-.Container-header nav li:hover{
+.Container-header div Label:hover{
 color:  #A96523;
 }
 .Logo{
-position: absolute;
-width: 110px;
-height: 120px;
+width: 90px;
+height: 110px;
 left: 100px;
 top: 0px;
 }
-
 @media (max-width: 700px){
   header   {
 flex-direction: column;
 }
-nav{
-padding: 10px 0px;
+.Label{
+font-size: 20px;
 }
-
 }

@@ -4,14 +4,14 @@ function Header() {
     return ( 
 
 <header className='Container-header'>
-<div className='Logo'>
+<div>
 <img className='Logo' src={Logo} alt="" />
 </div>
-<nav>
-<li>Incio de sesion</li>
-<li>Convenios</li>
-<li>Sobre nosotros</li>
-</nav>
+<div>
+<label className='Label'>Incio de sesion</label>
+<label className='Label'>Convenios</label>
+<label className='Label'>Sobre nosotros</label>
+</div>
 </header>
  );
 }

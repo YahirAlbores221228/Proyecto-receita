@@ -1,21 +1,21 @@
 
-.Container-button{
-display:flex;
-margin: 50px;
-align-items: center;
-justify-content: center;
-padding: 12px 35px;
-border-radius: 10px;
-background-color: rgb(255, 182, 127);
-position: absolute;
-height: 23px;
-top: 478px;
+.button{
+border-radius: 23px;
+padding: 10px 10px;
+height: 50px;
+border: none;
 cursor: pointer;
-}
-.Container-hijo{
+width:30%;
+background-color: #eebd89bb;
 font-family: 'Roboto';
 font-style: italic;
-color: white;
+font-weight: 400;
 font-size: 26px;
+line-height: 30px;
 text-align: center;
+color: #FFFFFF;
 }
+.button:hover{
+background-color: #00b8ebb5;
+}
+
