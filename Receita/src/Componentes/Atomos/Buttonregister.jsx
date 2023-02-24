@@ -3,7 +3,6 @@ function Buttonregister({Texto}) {
     return (
 
 <button className='button'>{Texto}</button>
-
  );
 }
 

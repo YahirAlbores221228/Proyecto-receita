@@ -12,7 +12,6 @@ function Ladingpage () {
 <Informacion/>
 <Informacion2/>
 <Footer/>
-
 </>
 
 
