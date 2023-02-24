@@ -42,6 +42,8 @@ function Footer() {
 <img className='Logo-oxxo' src={casayucatan} alt="" />
 <img className='Logo-oxxo' src={flamas} alt="" />
 </div>
+<hr />
+<p>Una empresa que piensa en ti </p>
 </div>
 </footer>
 
