@@ -1,18 +1,9 @@
-  .form-group label {
-    margin-bottom: 5px;
-    /* border:1px red solid; */
-  }
-
-  .registration-form-container {
+ .registration-form-container {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      width: 218.3vh;
-  /*   border: 1px red solid; */
-    
   }
-
   .registration-form {
     border: 1px rgb(5, 5, 3) solid;
       width: 500px;
@@ -22,19 +13,15 @@
       text-align: center;
     background-color: #FFF1D7;
   }
-
   h2 {
       margin-top: 0;
       margin-bottom: 30px;
       color: black;
   }
-
   .form-group {
       margin-bottom: 20px;
       text-align: left;
   }
-
-
   input[type="text"],
   input[type="email"],
   input[type="password"] {
@@ -42,7 +29,6 @@
       padding: 10px;
       border-radius: 5px;
       color: black;
-       /*  background-color: #f1a859; */
         border: none;
         border-bottom: 1px solid #E6A362;
         background-color: transparent;
@@ -52,17 +38,17 @@
     width: 30%;
     height: 30%;
   }
-
   button[type="submit"] {
       background-color: #EEBD89;
       color: #ffffff;
       padding: 10px 20px;
       border: none;
+    width: 100%;
+    font-size: 23px;
       border-radius: 5px;
       cursor: pointer;
       transition: all 0.3s ease;
   }
-
   button[type="submit"]:hover {
       background-color: #E6A362;
   }

@@ -1,17 +1,18 @@
 import React, { useState } from 'react'
 import imguser from "../../assets/Img/preview.png";
 import "../../assets/Styles/register.css";
+import Footer from './Footer';
 
 function Register() {
 
   const [profileImage, setProfileImage] = useState({imguser});
-
   const handleImageUpload = (event) => {
     const imageFile = event.target.files[0];
     setProfileImage(URL.createObjectURL(imageFile));
   };
 
   return (
+<>
     <div class="registration-form-container">
       <form class="registration-form">
         <h2>Create an account</h2>
@@ -46,6 +47,8 @@ function Register() {
         <button type="submit">Confirmar</button>
       </form>
     </div>
+<Footer/>
+</>
   );
 }
 
