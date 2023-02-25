@@ -1,14 +1,23 @@
-import Presentacion from "../../assets/Img/Verdura.jpg"
+import { Link } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 import Buttonregister from "./Buttonregister";
 import '../../assets/Styles/Imagen.css'
 function Imagen() {
+const navigate = useNavigate()
+    const handlerClick=(e)=>{
+        e.preventDefault();
+       navigate("/RegiseterP")
+    }
     return ( 
 <>
 <nav className="Container-nav">
 <div>
 <h1>LA CASA DEL VERDADERO PLACER</h1>
 <div>
-<Buttonregister className="Button" Texto="Registrarme"></Buttonregister>
+<Link to="RegiseterP"> 
+<Buttonregister className="Button" Texto="Registrarme" onClick={handlerClick}></Buttonregister>
+</Link>
+
 </div>
 </div>
 

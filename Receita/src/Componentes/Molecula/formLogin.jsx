@@ -1,8 +1,15 @@
 import React, { useState } from 'react'
+import { Link } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 import imguser from "../../assets/Img/preview.png";
 import "../../assets/Styles/register.css";
 
 function Formlogin() {
+const navigate = useNavigate()
+    const handlerClick=(e)=>{
+        e.preventDefault();
+       navigate("/RestauranteP")
+    }
 
   const [profileImage, setProfileImage] = useState({imguser});
 
@@ -28,7 +35,9 @@ function Formlogin() {
 
         <button type="submit">Confirmar</button>
         <div>
-          <a>No tienes cuenta? registrate aqui</a>
+<Link to="RestauranteP"> 
+ <a  onClick={handlerClick}>No tienes cuenta? registrate aqui</a>
+</Link> 
         </div>
       </form>
     </div>
