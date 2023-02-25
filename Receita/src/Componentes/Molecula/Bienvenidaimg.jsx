@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import {useNavigate } from "react-router-dom";
-import Buttonregister from "./Buttonregister";
+import Buttonregister from "../Atomos/Buttonregister";
 import '../../assets/Styles/Imagen.css'
 function Imagen() {
 const navigate = useNavigate()
@@ -17,11 +17,8 @@ const navigate = useNavigate()
 <Link to="RegiseterP"> 
 <Buttonregister className="Button" Texto="Registrarme" onClick={handlerClick}></Buttonregister>
 </Link>
-
 </div>
 </div>
-
-
 </nav>
 
 </>
