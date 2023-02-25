@@ -15,7 +15,7 @@ function Register() {
 <>
     <div class="registration-form-container">
       <form class="registration-form">
-        <h2>Create an account</h2>
+        <h2>CREATE AN ACCOUNT</h2>
         
         <div>
           <label htmlFor="profile-image-upload">
