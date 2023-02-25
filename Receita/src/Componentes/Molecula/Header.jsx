@@ -1,5 +1,4 @@
 import '../../assets/Styles/Header.css'
-import { Link } from "react-router-dom";
 import {useNavigate } from "react-router-dom";
 import Logo from "../../assets/Img/Logo.png"
 function Header() {
@@ -17,9 +16,9 @@ const navigate = useNavigate()
 </div>
 <div>
 
-<Link to="Login"> 
-<label className='Label'  onClick={handlerClick}>Incio de sesion</label>
-</Link>
+
+<label to="Login" className='Label'  onClick={handlerClick}>Incio de sesion</label>
+
 <label className='Label'>Convenios</label>
 <label className='Label'>Sobre nosotros</label>
 </div>
