@@ -4,12 +4,17 @@ import {useNavigate } from "react-router-dom";
 import imguser from "../../assets/Img/preview.png";
 import "../../assets/Styles/register.css";
 import Footer from './Footer';
-
+import Header from './Header';
 function Formlogin() {
 const navigate = useNavigate()
     const handlerClick=(e)=>{
         e.preventDefault();
        navigate("/RegiseterP")
+    }
+const navigaterestaurant = useNavigate()
+    const restaurantClick=(e)=>{
+        e.preventDefault();
+       navigaterestaurant("/RestauranteP")
     }
 
   const [profileImage, setProfileImage] = useState({imguser});
@@ -21,6 +26,7 @@ const navigate = useNavigate()
 
   return (
 <>
+<Header/>
     <div class="registration-form-container">
       <form class="registration-form">
         <h2>LOGIN</h2>
@@ -35,7 +41,7 @@ const navigate = useNavigate()
           <input type="password" id="password" name="password" required />
         </div>
 
-        <button type="submit">Confirmar</button>
+        <button type="submit" to="RestauranteP" onClick={restaurantClick}>Confirmar</button>
         <div>
 <Link to="RegiseterP"> 
  <a  onClick={handlerClick}>No tienes cuenta? registrate aqui</a>

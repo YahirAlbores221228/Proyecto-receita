@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import '../assets/Styles/Body.css'
 import Ladingpage from "../Pages/Lading-page";
 import Login from "../Pages/Login"
 import RegiseterP from "../Pages/RegiseterP"

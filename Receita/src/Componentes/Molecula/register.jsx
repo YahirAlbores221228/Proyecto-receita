@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import imguser from "../../assets/Img/preview.png";
 import "../../assets/Styles/register.css";
 import Footer from './Footer';
-
+import Header from "./Header"
 function Register() {
 
   const [profileImage, setProfileImage] = useState({imguser});
@@ -13,6 +13,8 @@ function Register() {
 
   return (
 <>
+<Header/>
+
     <div class="registration-form-container">
       <form class="registration-form">
         <h2>CREATE AN ACCOUNT</h2>
