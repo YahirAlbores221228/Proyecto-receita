@@ -11,6 +11,11 @@ const navigate = useNavigate()
        navigate("/Login")
     }
 
+    const Convenioss=(e)=>{
+        e.preventDefault();
+       navigate("/Convenios")
+    }
+
     return ( 
 
 <header className='Container-header'>
@@ -19,7 +24,7 @@ const navigate = useNavigate()
 </div>
 <div>
 <label to="Login" className='Label'  onClick={handlerClick}>Incio de sesion</label>
-<label className='Label'>Convenios</label>
+<label className='Label' to="Convenios" onClick={Convenioss}>Convenios</label>
 <label className='Label'>Sobre nosotros</label>
 </div>
 <div className='Search'>
