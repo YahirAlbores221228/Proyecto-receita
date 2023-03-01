@@ -1,5 +1,5 @@
 .Container-header{
-background-color: #eebd899c;
+background-color: #A96523;
 height: 100%;
 display: flex;
 align-items: center;
@@ -34,7 +34,7 @@ transform: scaleX(1);
 transform-origin: bottom left;
 }
 .Container-header div Label:hover{
-color:  #A96523;
+color:  #b4b4b4;
 }
 .Logo{
 width: 90px;

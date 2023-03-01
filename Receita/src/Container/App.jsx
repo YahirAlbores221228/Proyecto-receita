@@ -5,6 +5,7 @@ import Ladingpage from "../Pages/Lading-page";
 import Login from "../Pages/Login"
 import RegiseterP from "../Pages/RegiseterP"
 import RestauranteP from "../Pages/RestauranteP"
+import Home from '../Pages/Home';
 function App() {
   return (
 
@@ -16,6 +17,7 @@ function App() {
             <Route path="/RegiseterP" element={<RegiseterP/>}/>
           <Route path="/RestauranteP" element={<RestauranteP/>}/>
   <Route path="/Convenios" element={<Convenios/>}/>
+ <Route path="/Home" element={<Home/>}/>
         </Routes>
         </BrowserRouter>
 

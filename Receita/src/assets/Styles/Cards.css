@@ -1,0 +1,45 @@
+.Cards-container{
+width: 300px;
+overflow: hidden;
+box-shadow: 0px 0px 15px -5px;
+margin: 23px;
+height: 400px;
+background-color: #D9924E;
+text-align: center;
+color: #000000;
+transition: 0.3s;
+animation: ease-in;
+border-radius: 10px;
+}
+.Cards-container:hover{
+transform: scale(1.1);
+box-shadow: 0px 0px 15px 0px;
+
+}
+
+.Image-container{
+overflow: hidden;
+height: auto;
+}
+.Imagen{
+width: 100%;
+height: 200px;
+}
+.Cards-content
+{
+ margin: 1rem;
+margin-top: 0.5rem;
+}
+.Container-padres{
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+height: 100%;
+padding: 23px;
+background-color: rgba(0, 0, 0, 0.385);
+}
+
+.Cards-parrafo{
+font-size: 24px;
+}
