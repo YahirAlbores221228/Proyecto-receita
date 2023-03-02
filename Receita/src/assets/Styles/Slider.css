@@ -1,7 +1,7 @@
 .Slider-frame{
-width: 100%;
+width: 95%;
 height: 650px;
-margin: 0 auto 0;
+margin:  10px auto;
 overflow: hidden;
 }
 .Slider-frame ul{
@@ -17,7 +17,7 @@ width: 100%;
 }
 .Slider-frame .img{
 width: 100%;
-height: 650px;
+height: 600px;
 }
 @keyframes cambio {
     0%{margin-left: 0%;}

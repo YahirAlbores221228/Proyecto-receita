@@ -3,11 +3,15 @@ import Titulo from "../Atomos/TItulo";
 import Mexicana from "../../assets/Img/mexicanas.jpg"
 import restaurante from "../../assets/Img/restaurante.jpg"
 import preparacion from "../../assets/Img/preparacion.jpg"
+
 function Cardshome() {
     return (  
 
 <>
+<div>
+<Titulo>BIENVENIDO AL PARAISO GASTRONOMICO MEXICANO</Titulo>
 <div className='Container-padres'>
+
 
 <div className="Cards-container">
 <div className="Image-container">
@@ -40,7 +44,6 @@ function Cardshome() {
 </div>
 
 </div>
-
 <div className="Cards-container">
 <div className="Image-container">
 <img className='Imagen' src={preparacion} alt="" />
@@ -55,6 +58,7 @@ function Cardshome() {
 </div>
 </div>
 
+</div>
 </div>
 </div>
 </>
