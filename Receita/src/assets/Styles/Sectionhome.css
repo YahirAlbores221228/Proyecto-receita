@@ -3,12 +3,16 @@ display: flex;
 flex-wrap: wrap;
 align-items: center;
 justify-content: space-around;
-background-color: rgba(211, 210, 210, 0.309);
-height: auto;
+
 }
-.Seccion-parrafo{
-font-family: 'Roboto';
-font-size: 23px;
+.Container-parrafoo{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+line-height: 36px;
+text-align: center;
+font-size: 1.6rem;
+width: 50%;
 text-align: center;
 }
 .Ilustracion3{

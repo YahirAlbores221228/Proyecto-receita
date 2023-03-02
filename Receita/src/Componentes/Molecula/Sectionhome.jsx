@@ -4,10 +4,9 @@ function Sectionhome() {
     return ( 
 <>
 <div className="Seccion-home">
-<div className="Seccion-parrafo">
-<div className="Parrafo">
-<p>Receita es la mejor opcion no telo pierdas</p>
-</div>
+
+<div className="Container-parrafoo">
+<p>En Receita, puedes buscar y guardar tus recetas favoritas para acceder a ellas siempre que quieras. ¡Tendrás tus platillos preferidos al alcance de tu mano!</p>
 </div>
 <div className="Seccion-ilustracion">
 <img className="Ilustracion3" src={ILustracion3} alt="" />

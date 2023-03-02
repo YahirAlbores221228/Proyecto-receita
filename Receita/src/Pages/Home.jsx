@@ -1,12 +1,13 @@
-import Header from "../Componentes/Molecula/Header"
+
 import Sectionhome from "../Componentes/Molecula/Sectionhome";
 import Slider from "../Componentes/Molecula/Slider";
-import Footer from "../Componentes/Molecula/Footer"
+import Footer from "../Componentes/Molecula/Footer";
 import Cardshome from "../Componentes/Molecula/cardshome"
+import Headers from "../Componentes/Molecula/Header"
 function Home() {
     return ( 
 <>
-<Header/>
+<Headers/>
 <Slider/>
 <Sectionhome/>
 <Cardshome/>

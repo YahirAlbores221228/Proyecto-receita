@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 import { useRef } from "react";
 import "../../assets/Styles/register.css";
 import imguser from "../../assets/Img/preview.png";
-
+import {Navigate, useNavigate } from "react-router-dom";
 function RegisterRestaurante() {
 
 const formDataF = useRef();
-
+const navigate = useNavigate()
 const registro=(e)=>{
 e.preventDefault();
-
+navigate("/Home")
 const formData = new FormData (formDataF.current)
 const URI ="http://44.214.82.200:3000/restaurante"
 

@@ -1,4 +1,4 @@
-.Container-header{
+.Header{
 background-color: #f77d02d5;
 height: 100%;
 display: flex;
@@ -7,18 +7,8 @@ flex-wrap: wrap;
 justify-content: space-around;
 font-family: 'Roboto';
 font-weight: 600;
-
 }
-.Label{
-font-size: 30px;
-}
-.Container-header div Label{
-list-style: none;
-padding: 13px;
-cursor: pointer;
-position: relative;
-}
-.Container-header div Label::after{
+ .Container-label ::after{
 content: " ";
 position:absolute;
 bottom: 0;
@@ -30,11 +20,11 @@ background-color:#00ff08;
 border-radius:10px;
 transition: transform 0.25s ease-out;
 }
-.Container-header div Label:hover::after{
+.Header .Container-label :hover::after{
 transform: scaleX(1);
 transform-origin: bottom left;
 }
-.Container-header div Label:hover{
+.Header  :hover{
 color:  #ffffff;
 }
 .Logo{
@@ -46,9 +36,6 @@ top: 0px;
 @media (max-width: 700px){
   header   {
 flex-direction: column;
-}
-.Label{
-font-size: 20px;
 }
 }
 .Search-input{
@@ -76,3 +63,4 @@ margin-top: 23px;
  width: 400px;
 margin-bottom: 23px;
 }
+

@@ -4,7 +4,7 @@ overflow: hidden;
 box-shadow: 0px 0px 15px -5px;
 margin: 23px;
 height: 400px;
-background-color: #D9924E;
+background-color: #f2a900;
 text-align: center;
 color: #000000;
 transition: 0.3s;
@@ -14,9 +14,10 @@ border-radius: 10px;
 .Cards-container:hover{
 transform: scale(1.1);
 box-shadow: 0px 0px 15px 0px;
-
 }
-
+.Container-cards{
+background-color: rgba(209, 209, 209, 0.344);
+}
 .Image-container{
 overflow: hidden;
 height: auto;
@@ -37,9 +38,8 @@ align-items: center;
 flex-wrap: wrap;
 height: 100%;
 padding: 23px;
-background-color: rgba(209, 209, 209, 0.08);
-}
 
+}
 .Cards-parrafo{
 font-size: 24px;
 }

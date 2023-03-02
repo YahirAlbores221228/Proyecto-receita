@@ -1,15 +1,15 @@
 import React, { useState, useRef } from "react";
 import imguser from "../../assets/Img/preview.png";
 import "../../assets/Styles/register.css";
+import { useNavigate } from "react-router-dom";
 
 
 function Register() {
-
+const navigate = useNavigate()
 const formDataU = useRef();
-
 const registroUsuario = (e) => {
   e.preventDefault();
-
+  navigate("/Login")
   const formData = new FormData(formDataU.current);
   const URI = "http://44.214.82.200:3000/usuarios";
 
@@ -70,7 +70,7 @@ const registroUsuario = (e) => {
             <input type="password" id="password" name="Contraseña" required />
           </div>
 
-          <button type="submit" onClick={registroUsuario}> Confirmar </button>
+          <button  type="submit" onClick={registroUsuario}> Confirmar </button>
         </form>
       </div>
 

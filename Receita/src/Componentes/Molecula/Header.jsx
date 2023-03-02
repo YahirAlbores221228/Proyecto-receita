@@ -1,35 +1,32 @@
 import '../../assets/Styles/Header.css'
-import {useNavigate } from "react-router-dom";
+import {Link, useNavigate } from "react-router-dom";
 import Logo from "../../assets/Img/Logo.png"
 import { FaSistrix } from "react-icons/fa";
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" rel="stylesheet"/>
+import Label from '../Atomos/Label';
+import styled from 'styled-components';
 
-function Header() {
-const navigate = useNavigate()
-    const handlerClick=(e)=>{
-        e.preventDefault();
-       navigate("/Login")
-    }
 
-    const Convenioss=(e)=>{
-        e.preventDefault();
-       navigate("/Convenios")
-    }
+function Header() { 
+   const StyledLink = styled(Link)`
+text-decoration:none;
+`;
 
-    return ( 
-
-<header className='Container-header'>
+return ( 
+<header className='Header'>
 <div>
-<img className='Logo' src={Logo} alt="" />
+<img className='Logo' src={Logo}/>
 </div>
-<div>
-<label to="Login" className='Label'  onClick={handlerClick}>Incio de sesion</label>
-<label className='Label' to="Convenios" onClick={Convenioss}>Convenios</label>
-<label className='Label'>Sobre nosotros</label>
+<div className='Container-label'>
+<Label  msn="Home"/>
+<StyledLink to="/Convenios">
+<Label msn="Convenios"/>
+</StyledLink>
+<Label  msn="Nosotros"/>
+<Label  msn="Favoritos"/>
 </div>
 <div className='Search'>
 <input   placeholder='Buscar restaurante'  className='Search-input' type="Search" />
-<FaSistrix  className='icono'/>
+ <FaSistrix  className='icono'/>
 </div>
 </header>
  );

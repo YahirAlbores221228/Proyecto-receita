@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import {useNavigate } from "react-router-dom";
 import imguser from "../../assets/Img/preview.png";
 import "../../assets/Styles/register.css";
-import Footer from './Footer';
-import Header from './Header';
+
 function Formlogin() {
 const navigate = useNavigate()
     const handlerClick=(e)=>{
@@ -16,9 +15,7 @@ const navigaterestaurant = useNavigate()
         e.preventDefault();
        navigaterestaurant("/RestauranteP")
     }
-
   const [profileImage, setProfileImage] = useState({imguser});
-
   const handleImageUpload = (event) => {
     const imageFile = event.target.files[0];
     setProfileImage(URL.createObjectURL(imageFile));
@@ -26,7 +23,6 @@ const navigaterestaurant = useNavigate()
 
   return (
 <>
-<Header/>
     <div class="registration-form-container">
       <form class="registration-form">
         <h2>LOGIN</h2>
@@ -49,7 +45,7 @@ const navigaterestaurant = useNavigate()
         </div>
       </form>
     </div>
-<Footer/>
+
 </>
   );
 }
