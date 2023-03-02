@@ -2,13 +2,17 @@ import React, { useState } from 'react'
 import { useRef } from "react";
 import "../../assets/Styles/register.css";
 import imguser from "../../assets/Img/preview.png";
-import Footer from './Footer';
+
 function RegisterRestaurante() {
+
 const formDataF = useRef();
+
 const registro=(e)=>{
 e.preventDefault();
+
 const formData = new FormData (formDataF.current)
 const URI ="http://44.214.82.200:3000/restaurante"
+
 let options ={
 method: 'POST',
 headers:{"Content-Type":'application/json'},
@@ -24,47 +28,56 @@ fetch(URI,options)
 .then(data=>{alert(JSON.stringify(data))})
 
 }
-  const [profileImage, setProfileImage] = useState({imguser});
+  const [profileImage, setProfileImage] = useState(imguser);
   const handleImageUpload = (event) => {
     const imageFile = event.target.files[0];
     setProfileImage(URL.createObjectURL(imageFile));
   };
   return (
-<>
-    <div class="registration-form-container">
-      <form class="registration-form" ref={formDataF}>
+    <>
+      <div class="registration-form-container">
+        <form class="registration-form" ref={formDataF}>
           <h2>ALTA DE RESTAURANTE</h2>
-        <div>
-          <label htmlFor="profile-image-upload">
-            <img src={profileImage} alt="Profile" />
-          </label>
-          <input type="file" id="profile-image-upload" onChange={handleImageUpload} style={{ display: "none" }} />
-        </div>
+          <div>
+            <label htmlFor="profile-image-upload">
+              <img src={profileImage} alt="Profile" className="profile" />
+            </label>
+            <input
+              type="file"
+              id="profile-image-upload"
+              onChange={handleImageUpload}
+              style={{ display: "none" }}
+            />
+          </div>
 
-        <div class="form-group">
-          <label for="name">Nombre del restaurante</label>
-          <input type="text" id="name" name="Nombre" required />
-        </div>
+          <div class="form-group">
+            <label for="name">Nombre del restaurante</label>
+            <input type="text" id="name" name="Nombre" required />
+          </div>
 
-        <div class="form-group">
-          <label for="last-name">Tipo de restaurante</label>
-          <input type="text" id="last-name" name="Tipo" required />
-        </div>
+          <div class="form-group">
+            <label for="last-name">Tipo de restaurante</label>
+            <input type="text" id="last-name" name="Tipo" required />
+          </div>
 
-        <div class="form-group">
-          <label for="email">Ubicacion</label>
-          <input type="email" id="ubicacion" name="Ubicacion" required />
-        </div>
+          <div class="form-group">
+            <label for="email">Ubicacion</label>
+            <input type="text" id="ubicacion" name="Ubicacion" required />
+          </div>
 
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" id="password" name="Contrasena" required />
-        </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="Contrasena" required />
+          </div>
 
-        <button type="submit" onClick={registro} >Confirmar</button>
-      </form>
-    </div>
-<Footer/>
+          <button type="submit" onClick={registro}>
+            Confirmar
+          </button>
+        </form>
+      </div>
+     
+   
+
 </>
   );
 }

@@ -1,0 +1,20 @@
+.for-convenios-info{
+    display: flex;
+    flex-direction: row;
+    
+}
+#imgInfo{
+    width: 100%;
+    height: 100%;
+
+}
+.infoText{
+    margin-left: 20%;
+    text-align: center;
+}
+.Convenios{
+    top: 671px;
+    
+        background: linear-gradient(180deg, #F7D7B0 0%, rgba(247, 215, 176, 0) 100%);
+        border-radius: 20px;
+}

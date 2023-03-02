@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Restaurante from "../../Container/Restaurante";
+import '../../assets/Styles/VerRestaurantes.css'
 
 function VerRestaurantes() {
   const [restaurantes, setRestaurantes] = useState([]);
@@ -21,8 +22,28 @@ function VerRestaurantes() {
   }, [loading]);
   return (
     <>
-      <button onClick={handlerClick}>Mostrar Restaurantes</button>
-      <div /* className="rick" */>
+      <div className="for-convenios-info">
+        <div>
+    
+        </div>
+        <div className="infoText">
+          <h1>NUESTROS CONVENIOS</h1>
+          <p htmlFor="">
+            Es importante informar a nuestros clientes acerca de los convenios
+            que tenemos con restaurantes y los servicios que ofrecemos, para que
+            puedan visitarnos y disfrutar de un buen día con amigos, familia o
+            pareja.
+          </p>
+          <h6>
+            ¡Anímate a visitarlos y disfrutar de una experiencia gastronómica
+            inolvidable!
+          </h6>
+        </div>
+      </div>
+
+      <div className="Convenios">
+        <button onClick={handlerClick}>Mostrar Restaurantes</button>
+
         {loading &&
           restaurantes.map((restaurante) => (
             <Restaurante
@@ -34,6 +55,7 @@ function VerRestaurantes() {
             />
           ))}
       </div>
+     
     </>
   );
 }
