@@ -11,7 +11,7 @@ const registro=(e)=>{
 e.preventDefault();
 navigate("/Home")
 const formData = new FormData (formDataF.current)
-const URI ="http://44.214.82.200:3000/restaurante"
+const URI ="https://receita.iothings.com.mx:3000/restaurante"
 
 let options ={
 method: 'POST',

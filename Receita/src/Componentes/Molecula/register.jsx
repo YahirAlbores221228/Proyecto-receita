@@ -11,7 +11,7 @@ const registroUsuario = (e) => {
   e.preventDefault();
   navigate("/Login")
   const formData = new FormData(formDataU.current);
-  const URI = "http://44.214.82.200:3000/usuarios";
+  const URI = "https://receita.iothings.com.mx:3000/usuarios";
 
   let options = {
     method: "POST",

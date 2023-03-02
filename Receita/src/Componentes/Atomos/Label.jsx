@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 function Label({msn}) {
 const StyledLabel =styled.label`
-font-size: 30px;
+font-size: 1.6rem;
 color: #000000;
 
 list-style: none;

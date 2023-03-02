@@ -5,7 +5,7 @@ import '../../assets/Styles/VerRestaurantes.css'
 function VerRestaurantes() {
   const [restaurantes, setRestaurantes] = useState([]);
 
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const handlerClick = (e) => {
     setLoading(!loading);
@@ -13,7 +13,7 @@ function VerRestaurantes() {
 
   useEffect(() => {
     console.log("useEffect");
-    fetch("http://44.214.82.200:3000/restaurante")
+    fetch("https://receita.iothings.com.mx:3000/restaurante")
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
@@ -42,8 +42,9 @@ function VerRestaurantes() {
       </div>
 
       <div className="Convenios">
-        <button onClick={handlerClick}>Mostrar Restaurantes</button>
-
+<div className="Container-button-convenios">
+        
+</div>
         {loading &&
           restaurantes.map((restaurante) => (
             <Restaurante
