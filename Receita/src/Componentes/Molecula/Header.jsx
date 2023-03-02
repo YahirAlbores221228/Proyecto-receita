@@ -21,6 +21,9 @@ return (
 <StyledLink to="/Convenios">
 <Label msn="Convenios"/>
 </StyledLink>
+<StyledLink to="/RestauranteP">
+<Label msn="Registro de restaurante "/>
+</StyledLink>
 <Label  msn="Nosotros"/>
 <Label  msn="Favoritos"/>
 </div>

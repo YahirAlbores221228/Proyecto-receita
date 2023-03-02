@@ -42,9 +42,7 @@ function VerRestaurantes() {
       </div>
 
       <div className="Convenios">
-<div className="Container-button-convenios">
-        
-</div>
+
         {loading &&
           restaurantes.map((restaurante) => (
             <Restaurante

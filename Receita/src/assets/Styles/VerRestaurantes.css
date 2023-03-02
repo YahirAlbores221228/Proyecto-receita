@@ -17,6 +17,8 @@ align-items: center;
 .Convenios{
     top: 671px;
 height: auto;
+font-size: 2rem;
+padding: 23px;
 text-align: center;
         background: linear-gradient(180deg, #F7D7B0 0%, rgba(247, 215, 176, 0) 100%);
         border-radius: 20px;

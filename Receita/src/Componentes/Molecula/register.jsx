@@ -17,11 +17,10 @@ const registroUsuario = (e) => {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      Profile: formData.get("Profile"),
       Nombre: formData.get("Nombre"),
       Apellido: formData.get("Apellido"),
       Correo: formData.get("Correo"),
-      Contraseña: formData.get("Contraseña"),
+      Contrasena: formData.get("Contrasena"),
     }),
   };
   fetch(URI, options)
@@ -67,7 +66,7 @@ const registroUsuario = (e) => {
 
           <div class="form-group">
             <label for="password">Contraseña</label>
-            <input type="password" id="password" name="Contraseña" required />
+            <input type="password" id="password" name="Contrasena" required />
           </div>
 
           <button  type="submit" onClick={registroUsuario}> Confirmar </button>
