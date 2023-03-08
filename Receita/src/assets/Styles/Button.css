@@ -6,7 +6,7 @@ height: 50px;
 border: none;
 cursor: pointer;
 width:30%;
-background-color: #eebd89bb;
+background-color: #fb993ebb;
 font-family: 'Roboto';
 font-style: italic;
 font-weight: 400;
@@ -16,6 +16,13 @@ text-align: center;
 color: #FFFFFF;
 }
 .button:hover{
-background-color: #00b8ebb5;
+background-color: #0423ebb4;
 }
 
+@media (max-width: 700px){
+.button  {
+width: auto;
+font-size: 1.2rem;
+margin-bottom: 12px;
+}
+}

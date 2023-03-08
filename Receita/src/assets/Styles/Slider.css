@@ -1,7 +1,7 @@
 .Slider-frame{
-width: 95%;
-height: 650px;
-margin:  10px auto;
+width: 99%;
+height: 550px;
+margin:  9px auto;
 overflow: hidden;
 }
 .Slider-frame ul{
@@ -15,9 +15,30 @@ animation: cambio 16s infinite alternate linear;
 list-style: none;
 width: 100%;
 }
+.hola{
+font-size: 2.6rem;
+position: absolute;
+width: 100%;
+text-align: center;
+color: rgb(255, 255, 255);
+top: 35%;
+}
+.titulo-slider{
+text-transform: uppercase;
+font-family: 'Roboto';
+font-style: normal;
+line-height: 75px;  
+}
+@media (max-width: 700px){
+.hola  {
+font-size: 1.6rem;
+margin: 30% auto;
+text-align: center;
+}
+}
 .Slider-frame .img{
 width: 100%;
-height: 600px;
+height: 500px;
 }
 @keyframes cambio {
     0%{margin-left: 0%;}
@@ -31,5 +52,4 @@ height: 600px;
 
   75%{margin-left: -300%;}
     100%{margin-left: -300%;}
-
 }

@@ -8,11 +8,15 @@ function Informacion2() {
 <div>
 <Ilustracion2/>
 </div>
+
 <div className="Container-informacions">
 <p>Con nosotros seras un gran cocinera, receita pone a disponibilidad toda la gastronomia mexicana</p>
 <p>¡Registrate y disfruta lo que tenemos para ti!</p>
 </div>
 </div>
+
+
+
 
 </>
 

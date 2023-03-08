@@ -12,7 +12,7 @@ const navigate = useNavigate()
 <>
 <nav className="Container-nav">
 <div>
-<h1>LA CASA DEL VERDADERO PLACER</h1>
+<h1 className="titulo-nav">LA CASA DEL VERDADERO PLACER</h1>
 <div>
 <Link to="RegiseterP"> 
 <Buttonregister className="Button" Texto="Registrarme" onClick={handlerClick}></Buttonregister>

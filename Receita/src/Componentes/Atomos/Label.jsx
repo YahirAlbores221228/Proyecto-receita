@@ -4,7 +4,6 @@ function Label({msn}) {
 const StyledLabel =styled.label`
 font-size: 1.6rem;
 color: #000000;
-
 list-style: none;
 padding: 13px;
 cursor: pointer;

@@ -1,4 +1,4 @@
-import Ilustracion1  from'../../assets/Img/Ilustracion1.png'
+import Ilustracion1  from'../../assets/Img/plato2.png'
 import '../../assets/Styles/ImgIlustracion.css'
 function ILustracion1() {
     return (

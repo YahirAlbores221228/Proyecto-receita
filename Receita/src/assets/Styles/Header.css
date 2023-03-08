@@ -1,5 +1,4 @@
 .Header{
-
 display: flex;
 align-items: center;
 flex-wrap: wrap;
@@ -16,7 +15,7 @@ left: 0;
 height: 3px;
 width: 100%;
 transform: scaleX(0);
-background-color:#00ff08;
+background-color:#BE8952;
 border-radius:10px;
 transition: transform 0.25s ease-out;
 }
@@ -24,7 +23,7 @@ transition: transform 0.25s ease-out;
 transform: scaleX(1);
 transform-origin: bottom left;
 }
-.Header  :hover{
+.Container-label  :hover{
 color:  #ffffff;
 }
 .Logo{
@@ -39,16 +38,23 @@ flex-direction: column;
 }
 }
 .Search-input{
-  border: none ;
+  border: 2px solid transparent;
   border-radius: 23px;
   padding: 15px 15px 15px 35px;
-  background-color: #FFF1D7;
+  background-color: #fafafab6;
   outline: none;
   width: 100%;
-  cursor: pointer;
+ transition: .3s ease;
+}
+
+.Search-input:focus, .Search-input:hover {
+ outline: none;
+ border-color: rgba(0, 0, 0, 0.106);
+ background-color: #fff;
+ box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.145);
 }
 .icono{
-  color: #FFC751;
+  color: #fbb215;
    position: absolute;
    width: 20px;
    height: 20px;
@@ -62,5 +68,7 @@ margin-top: 15px;
  position: relative;
  width: 400px;
 margin-bottom: 23px;
+
 }
+
 

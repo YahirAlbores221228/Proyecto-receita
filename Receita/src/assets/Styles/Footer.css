@@ -24,7 +24,6 @@ font-size: 1.4rem;
 label{
 font-size: 1rem;
 }
-
 .Container-logo{
 height: 100%;
 width: auto;
@@ -33,10 +32,6 @@ text-align: center;
 .Logo-asociadas{
 width: auto;
 height: 40px;
-
-}
-label:hover{
-
 }
 hr{
 position: relative;
@@ -66,7 +61,7 @@ display: flex;
 justify-content:space-between;
 }
 .Redes:hover{
-color: #00b8ebb5;
+color: #0423ebb4;
 }
 @media (max-width: 700px){
 .Container-padre  {

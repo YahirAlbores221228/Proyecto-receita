@@ -8,11 +8,10 @@ function Cardshome() {
     return (  
 
 <>
+<hr />
 <div className='Container-cards'>
 <Titulo>BIENVENIDO AL PARAISO GASTRONOMICO MEXICANO</Titulo>
 <div className='Container-padres'>
-
-
 
 <div className="Cards-container">
 <div className="Image-container">

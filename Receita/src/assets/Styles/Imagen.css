@@ -7,15 +7,23 @@ text-align: center;
 font-family: 'Roboto';
 font-style: normal;
 font-size:50px;
-height: 80vh;
-color: #000000 ;
+height: 90vh;
+color: #ffae00 ;
 border: 1px none;
-background: url(../Img/Verdura.jpg) no-repeat;
+background: url(../Img/fondo-imge.jpg) no-repeat;
 background-size: cover;
-text-shadow: 10px 15px 10px rgba(255, 162, 0, 0.83);
+}
+h1{
+color: #000000;
+font-size: 4rem;
 }
 
-
+@media (max-width: 700px){
+.titulo-nav {
+font-size: 4rem;
+width: auto;
+}
+}
 
 
 

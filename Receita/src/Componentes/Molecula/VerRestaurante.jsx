@@ -50,7 +50,6 @@ function VerRestaurantes() {
               Nombre={restaurante.Nombre}
               Tipo={restaurante.Tipo}
               Ubicacion={restaurante.Ubicacion}
-              /* Contrasena={restaurante.Contrasena} */
             />
           ))}
       </div>

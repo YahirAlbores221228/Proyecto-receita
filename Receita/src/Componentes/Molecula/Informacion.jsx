@@ -13,7 +13,6 @@ function Sectioninformacion() {
 <div className="Ilustracion">
 <ILustracion1/>
 </div>
-
 </div>
 </>
  );
