@@ -12,7 +12,7 @@ import Home from '../Pages/Home';
 import ProtectedParentRoute from "../Container/ProtectedParentRoute";
 import Categoria from '../Pages/Categoria';
 import About from '../Pages/About';
-
+import Categoriaa from '../Pages/Categoriaingrediente';
 
 function App() {
   const [isLoged, setIsLoged] = useState(false);
@@ -31,6 +31,7 @@ function App() {
            <Route path="/Home" element={<Home/>}/>
  <Route path="/Categoria" element={<Categoria/>}/>
 <Route path="/About" element={<About/>}/>
+<Route path="/Categoriaa" element={<Categoriaa/>}/>
         </Routes>
 </UserContext.Provider>
         </BrowserRouter>

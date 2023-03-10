@@ -1,0 +1,79 @@
+.fondo-cards{
+height: 90vh;
+background: url(../Img/cards-fondo.jpg) no-repeat;
+background-size: cover;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center
+}
+.container-cards{
+font-family: 'Roboto';
+font-size: 1.3rem;
+width: 100%;
+height: 100%;
+padding-top: 23px;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+gap: 23px;
+}
+.cards{
+height:100%;
+width: auto;
+background-color: #FFF1D7;
+margin-bottom: 23px;
+box-shadow: 0 25px 50px rgba(0,0,0,0.55);
+transition: all .3s;
+}
+.cards:hover{
+transform: scale(0.9);
+}
+.imgen{
+width: auto;
+height: 200px;
+left: 0;
+right: 0;
+margin: auto;
+}
+.imagen{
+width: 100%;
+height: 100%;
+}
+.informacion{
+display: flex;
+justify-content: center;
+justify-content: space-around;
+}
+.Nombre-receta{
+padding: 5px;
+text-align: center;
+font-style: normal;
+font-weight: 700;
+line-height: 42px;
+}
+.hr{
+width: 250px;
+color: #959595;
+}
+.Button{
+padding: 10px;
+}
+.ver{
+width: 50%;
+border: none;
+border-radius: 4px;
+height: 40px;
+color: white;
+background-color: #FFAE00;
+cursor: pointer;
+}
+.cards:hover{
+background-color:#F7D7B0 ;
+}
+.precio{
+text-align: center;
+color: #BE8952;
+}
+
+
