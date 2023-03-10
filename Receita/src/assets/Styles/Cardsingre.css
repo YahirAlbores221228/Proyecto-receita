@@ -25,6 +25,7 @@ background-color: #FFF1D7;
 margin-bottom: 23px;
 box-shadow: 0 25px 50px rgba(0,0,0,0.55);
 transition: all .3s;
+padding: 3px 3px;
 }
 .cards:hover{
 transform: scale(0.9);

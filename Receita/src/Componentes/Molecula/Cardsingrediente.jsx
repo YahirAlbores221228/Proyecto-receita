@@ -1,5 +1,6 @@
 import '../../assets/Styles/Cardsingre.css'
 import ime from "../../assets/Img/3.jpg"
+import PaypalButton from '../Organismo/PaypalButton';
 function Cards() {
     return (  
 <>
@@ -10,19 +11,19 @@ function Cards() {
 <div className='container-cards'>
 <div className='cards'>
 <div className='imgen'>
-<img className='imagen'  alt="" />
+<img className='imagen' src={ime}  alt="" />
 </div>
 
 <div>
-<h2 className='Nombre-receta'></h2>
+<h2 className='Nombre-receta'>Mole negro</h2>
 </div>
 <hr className='hr' />
 <div className='informacion'>
 <div>
-<p></p>
+<p>4 personas</p>
 </div>
 <div>
-<p></p>
+<p> 60 calorias</p>
 </div>
 </div>
 <hr className='hr' />
@@ -30,6 +31,7 @@ function Cards() {
 <button className='ver'>Ver</button>
 </div>
 </div>
+<PaypalButton/>
 </div>
 </>
 
