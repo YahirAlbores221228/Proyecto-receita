@@ -1,0 +1,45 @@
+.about-header{
+width: 100%;
+height: auto;
+position: relative;
+}
+video{
+width: 100%;
+}
+.nosotros{
+height: 100%;
+width: 100%;
+top: 0;
+right: 0;
+position: absolute;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+font-size: 4rem;
+}
+.section-frase-img{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+
+align-items: center;
+}
+.hij{
+font-size: 2rem;
+width: 50%;
+
+}
+.img-about
+{
+width: 500px;
+}
+
+.Receita
+{
+text-align: center;
+font-size: 2rem;
+margin: 23px;
+margin-bottom: 50px;
+}

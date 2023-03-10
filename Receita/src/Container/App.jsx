@@ -11,6 +11,7 @@ import RestauranteP from "../Pages/RestauranteP"
 import Home from '../Pages/Home';
 import ProtectedParentRoute from "../Container/ProtectedParentRoute";
 import Categoria from '../Pages/Categoria';
+import About from '../Pages/About';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
            <Route path="/Convenios" element={<Convenios/>}/>
            <Route path="/Home" element={<Home/>}/>
  <Route path="/Categoria" element={<Categoria/>}/>
+<Route path="/About" element={<About/>}/>
         </Routes>
 </UserContext.Provider>
         </BrowserRouter>

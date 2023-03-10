@@ -24,7 +24,9 @@ return (
 <StyledLink to="/RestauranteP">
 <Label msn="Registro de restaurante "/>
 </StyledLink>
+<StyledLink to="/About">
 <Label  msn="Nosotros"/>
+</StyledLink>
 <Label  msn="Favoritos"/>
 </div>
 <div className='Search'>
