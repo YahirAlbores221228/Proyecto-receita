@@ -8,7 +8,7 @@ font-style: italic;
 font-weight: 700;
 line-height: 42px;
 text-align:center;
-margin:10px auto
+margin:10px auto;
 `;
 
 

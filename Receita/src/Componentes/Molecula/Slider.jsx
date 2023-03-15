@@ -7,6 +7,7 @@ import Img4 from "../../assets/Img/Slider5.jpg"
 function Slider() {
     return ( 
 <>
+<div className='Contenedor-slider'>
 <div className="Slider-frame">
 <ul>
 <li><img src={Img1} className="img" /></li>
@@ -16,6 +17,7 @@ function Slider() {
 
 </ul>
 
+</div>
 </div>
 <div className='hola'>
 <h3 className='titulo-slider' >Los sabores que te haran sentir bien</h3>

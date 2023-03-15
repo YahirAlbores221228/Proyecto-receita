@@ -1,92 +1,97 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { Link } from "react-router-dom";
-import {useNavigate } from "react-router-dom";
-import imguser from "../../assets/Img/preview.png";
+import { useNavigate } from "react-router-dom"
+import Swal from 'sweetalert2';
 import "../../assets/Styles/register.css";
-import axios from 'axios';
-import Notification from "../Organismo/Notification"
-function Formlogin() {
-const [Nombre, setNombre] = useState("");
-const [Contrasena, setContrasena] = useState("");
-const [isLoggedIn, setIsLoggedIn] = useState(false);
-const [notificationMessage, setNotificationMessage] = useState("");
 
-const handleSubmit = async (event) => {
-  event.preventDefault();
-  try {
-   
-    const response = await axios.post(
-      "https://receita.iothings.com.mx:3000/usuarios",
-      {
-        Nombre,
-        Contrasena,
-      }
-    );
-    console.log(response.data); 
-    setIsLoggedIn(true);
-     setNotificationMessage("¡Has iniciado sesión correctamente!");
-  } catch (error) {
-    console.log(error);
-    setNotificationMessage("Ha ocurrido un error al iniciar sesión.");
-  }
-};
-const navigate = useNavigate()
-    const handlerClick=(e)=>{
-        e.preventDefault();
-       navigate("/RegiseterP")
+function Formlogin() {
+  /**************************************************************************** */
+  const form = useRef();
+  const navigate = useNavigate();
+
+  const handlerClick = (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form.current);
+    const Nombre = formData.get("Nombre");
+    const Contrasena = formData.get("Contrasena");
+
+    if (!Nombre || !Contrasena) {
+      Swal.fire("Espera", "Aún no has llenado todos los campos", "warning");
+    } else {
+      fetch(
+        `https://receita.iothings.com.mx/usuarios/${Nombre}/${Contrasena}`
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.message == "Contraseña incorrecta") {
+            Swal.fire(
+              data.message,
+              "La contraseña que ingresaste no coincide con el usuario",
+              "error"
+            );
+          }
+          if (data.message == "Usuario no encontrado") {
+            Swal.fire(data.message, "No hemos encontrado el usuario", "error");
+          }
+          if (data.message == "Inicio de sesion exitoso!") {
+            Swal.fire(data.message, "Has click para continuar", "success");
+            navigate("/Home");
+          }
+        });
     }
-const navigaterestaurant = useNavigate()
-    const restaurantClick=(e)=>{
-        e.preventDefault();
-       navigaterestaurant("/Home")
-    }
-  const [profileImage, setProfileImage] = useState({imguser});
-  const handleImageUpload = (event) => {
-    const imageFile = event.target.files[0];
-    setProfileImage(URL.createObjectURL(imageFile));
   };
+  /************************************************************************** */
+  const [isPasswordHidden, setIsPasswordHidden] = useState(true);
+
+  const handlePasswordVisibilityToggle = () => {
+    setIsPasswordHidden(!isPasswordHidden);
+  }; 
+
+  const handlerClickRg = (e) => {
+    e.preventDefault();
+    navigate("/RegisterP")
+  }
 
   return (
-<>
-  <div class="registration-form-container">
-        {isLoggedIn && <Notification message={notificationMessage} />}
-        <form class="registration-form" onSubmit={handleSubmit}>
+    <>
+      <div class="registration-form-container">
+        <form ref={form} class="registration-form">
           <h2>LOGIN</h2>
 
           <div class="form-group">
             <label for="email">Nombre de usuario</label>
             <input
               type="text"
-         
-              name="Nombre" 
-              value={Nombre}
+              name="Nombre"
               onChange={(e) => setNombre(e.target.value)}
-            
-            />
+            /> 
           </div>
 
           <div class="form-group">
             <label for="password">Password</label>
             <input
-               type="password"
           
-              name="Contrasena" 
-              value={Contrasena}
-              onChange={(e) => setContrasena(e.target.value)}
-            />
+              type={isPasswordHidden ? "password" : "text"} 
+              name="Contrasena"
+            
+              onChange={(e) => setContrasena(e.target.value)} 
+              />
+             { <button
+              className="eye-button" aria-label={
+                isPasswordHidden ? "Mostrar contraseña" : "Ocultar contraseña"
+              } onClick={handlePasswordVisibilityToggle}></button>  }
           </div>
-
-          <button to="Home" onClick={restaurantClick} type="submit"> Confirmar </button>
-
+          <button onClick={handlerClick} type="submit"> Confirmar </button>
           <div>
             <Link to="RegisterP">
-              <a onClick={handlerClick}>No tienes cuenta? registrate aqui</a>
+              <a onClick={handlerClickRg}>No tienes cuenta? registrate aqui</a>
             </Link>
           </div>
         </form>
       </div>
 
-</>
+    </>
   );
 }
 

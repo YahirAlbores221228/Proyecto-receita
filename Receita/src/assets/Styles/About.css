@@ -9,8 +9,6 @@ width: 100%;
 .nosotros{
 height: 100%;
 width: 100%;
-top: 0;
-right: 0;
 position: absolute;
 text-align: center;
 display: flex;
@@ -23,23 +21,26 @@ font-size: 4rem;
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
-
 align-items: center;
 }
 .hij{
 font-size: 2rem;
-width: 50%;
-
+text-align: center;
 }
-.img-about
-{
+.Imagen-plato{
 width: 500px;
 }
-
 .Receita
 {
 text-align: center;
 font-size: 2rem;
-margin: 23px;
+margin: 2px;
 margin-bottom: 50px;
+}
+
+.Receita-titulo{
+font-size: 4rem;
+margin: auto;
+font-family: 'Roboto';
+color: #ffae00;
 }

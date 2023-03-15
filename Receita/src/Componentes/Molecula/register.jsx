@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import imguser from "../../assets/Img/preview.png";
+
 import "../../assets/Styles/register.css";
 import { useNavigate } from "react-router-dom";
 
@@ -30,24 +30,13 @@ const registroUsuario = (e) => {
     });
 };
 
-  const [profileImage, setProfileImage] = useState(imguser);
-  const handleImageUpload = (event) => {
-    const imageFile = event.target.files[0];
-    setProfileImage(URL.createObjectURL(imageFile));
-  };
+ 
 
   return (
     <>
       <div class="registration-form-container">
         <form class="registration-form" ref={formDataU}>
           <h2>Create an account</h2>
-
-          <div>
-            <label htmlFor="profile-image-upload">
-              <img src={profileImage} alt="Profile" name="Profile" className="profile" />
-            </label>
-            <input type="file" id="profile-image-upload" onChange={handleImageUpload} style={{ display: "none" }} />
-          </div>
 
           <div class="form-group">
             <label for="name">Nombre</label>
@@ -56,7 +45,7 @@ const registroUsuario = (e) => {
 
           <div class="form-group">
             <label for="last-name">Apellido</label>
-            <input type="text" id="Apellido" name="Apellido" required />
+            <input type="text" id="Apellidos" name="Apellido" required />
           </div>
 
           <div class="form-group">

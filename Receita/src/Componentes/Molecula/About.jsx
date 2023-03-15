@@ -21,18 +21,13 @@ function About() {
 <p>Queremos que ames la cocina mexicana y disfrutes en familia.</p>
 </div>
 <div>
-<img className="img-about" src={about} alt="" />
+<img  className="Imagen-plato" src={about} alt="" />
 </div>
 </div>
 <div className="Receita">
-<h1>¿RECEITA?</h1>
+<h1 className="Receita-titulo">¿RECEITA?</h1>
 <p>Receita es un sitio web  que ofrece una amplia variedad de recetas de cocina mexicana, organizadas por categorías y con opciones para diferentes presupuestos. Además, también proporciona información detallada sobre los mejores restaurantes de México, permitiéndote explorar y descubrir la gastronomía mexicana. Receita se esfuerza por ofrecer seguridad, confiabilidad y buena información en su funcionamiento y diseño, con el objetivo de hacer que la preparación de platillos deliciosos y saludables sea fácil y accesible para todos.</p>
-
 </div>
-
-
-
-
 
 </>
 

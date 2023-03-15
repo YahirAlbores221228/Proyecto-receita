@@ -6,7 +6,7 @@ function Sectioninformacion() {
 <>
 <div className="Container-informacion"> 
 <div className="Container-titulo">
-<Tituloreceita msn="RECEITA"></Tituloreceita>
+<Tituloreceita>RECEITA</Tituloreceita>
 <p className="Parrafo1">Es un aplicativo donde podras ver los restaurnates y recetas que ofrecen, para poder preparar un mejor platillo y conocer la gastronomia mexicana</p>
 <p className="Parrafo2">Atrevete a explorar los sabores mas autenticos de nuestro pais con nuestra aplicacion</p>
 </div>

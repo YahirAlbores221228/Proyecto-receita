@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Restaurante from "../../Container/Restaurante";
-import '../../assets/Styles/VerRestaurantes.css'
+import "../../assets/Styles/VerRestaurantes.css";
 
 function VerRestaurantes() {
   const [restaurantes, setRestaurantes] = useState([]);
@@ -23,9 +23,7 @@ function VerRestaurantes() {
   return (
     <>
       <div className="for-convenios-info">
-        <div>
-    
-        </div>
+        <div></div>
         <div className="infoText">
           <h1>NUESTROS CONVENIOS</h1>
           <p htmlFor="">
@@ -42,7 +40,6 @@ function VerRestaurantes() {
       </div>
 
       <div className="Convenios">
-
         {loading &&
           restaurantes.map((restaurante) => (
             <Restaurante
@@ -53,7 +50,6 @@ function VerRestaurantes() {
             />
           ))}
       </div>
-     
     </>
   );
 }
