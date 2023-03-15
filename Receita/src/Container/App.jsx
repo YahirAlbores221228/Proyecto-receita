@@ -26,7 +26,7 @@ function App() {
         {/* <Route element={<ProtectedParentRoute isLoged={isLoged} />}></Route> */}
         <Route path="/RestauranteP" element={<RestauranteP />} />
         <Route path="/Convenios" element={<Convenios />} />
-        <Route path="/Home" element={<Home />} />
+        <Route path="/Home" element={<Home/>} />
         <Route path="/Categoria" element={<Categoria />} />
         <Route path="/About" element={<About />} />
         <Route path="/Categoriaa" element={<Categoriaa />} />
