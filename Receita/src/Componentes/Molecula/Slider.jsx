@@ -1,30 +1,30 @@
 import '../../assets/Styles/Slider.css'
-import Img1 from "../../assets/Img/Slider1.jpg"
 
-import Img2 from "../../assets/Img/Slider3.jpg"
-import Img3 from "../../assets/Img/Slider4.jpg"
-import Img4 from "../../assets/Img/Slider5.jpg"
 function Slider() {
     return ( 
 <>
-<div className='Contenedor-slider'>
-<div className="Slider-frame">
-<ul>
-<li><img src={Img1} className="img" /></li>
-<li><img src={Img2} className="img"  /></li>
-<li><img src={Img3} className="img" /></li>
-<li><img src={Img4} className="img" /></li>
-
-</ul>
-
-</div>
-</div>
-<div className='hola'>
-<h3 className='titulo-slider' >Los sabores que te haran sentir bien</h3>
-</div>
+    <div id="carouselExample" class="carousel slide carruselito">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="src/assets/Img/Slider5.jpg" class="d-block w-100 imagencita" alt=""/>
+        </div> 
+        <div class="carousel-item">
+        <img src="src/assets/Img/Slider3.jpg" class="d-block w-100 imagencita" alt=""/>
+        </div>
+        <div class="carousel-item">
+        <img src="src/assets/Img/Slider4.jpg" class="d-block w-100 imagencita" alt=""/>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
 </>
-
-
 
 
  );

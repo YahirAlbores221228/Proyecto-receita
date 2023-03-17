@@ -4,6 +4,8 @@ font-family: 'Roboto';
 font-style: italic;
 font-weight: 400px;
 line-height: 28px;
+text-align: center;
+padding-top: 23px;
 }
 .Footer-logo{
 width: 10em;
@@ -12,7 +14,9 @@ height: 10em;
 .Container-padre{
 display:flex;
 flex-wrap: wrap;
+gap: 13px;
 justify-content: space-around;
+
 }
 .Container-empresa{
 display: flex;
@@ -20,18 +24,19 @@ flex-direction: column;
 }
 h4{
 font-size: 1.4rem;
+
 }
 label{
 font-size: 1rem;
+margin-bottom: 3px;
 }
 .Container-logo{
 height: 100%;
 width: auto;
-text-align: center;
 }
 .Logo-asociadas{
 width: auto;
-height: 40px;
+height: 30px;
 }
 hr{
 position: relative;

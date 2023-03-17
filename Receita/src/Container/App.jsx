@@ -13,6 +13,7 @@ import Home from "../Pages/Home";
 import Categoria from "../Pages/Categoria";
 import About from "../Pages/About";
 import Categoriaa from "../Pages/Categoriaingrediente";
+import Registroderecetas from "../Pages/Registrorecetas";
 
 function App() {
   /*   const [isLoged, setIsLoged] = useState(false); */
@@ -30,6 +31,7 @@ function App() {
         <Route path="/Categoria" element={<Categoria />} />
         <Route path="/About" element={<About />} />
         <Route path="/Categoriaa" element={<Categoriaa />} />
+ <Route path="/Registrorecetas"element={<Registroderecetas/>} />
       </Routes>
       {/* </UserContext.Provider> */}
     </BrowserRouter>

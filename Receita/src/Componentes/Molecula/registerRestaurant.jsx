@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useRef } from "react";
+import Swal from 'sweetalert2';
 import "../../assets/Styles/register.css";
 
 import { Navigate, useNavigate } from "react-router-dom";
@@ -8,7 +9,7 @@ function RegisterRestaurante() {
   const navigate = useNavigate();
   const registro = (e) => {
     e.preventDefault();
-    navigate("/Home");
+    navigate("/Registrorecetas");
     const formData = new FormData(formDataF.current);
     const URI = "https://receita.iothings.com.mx:3000/restaurante";
 
@@ -25,14 +26,13 @@ function RegisterRestaurante() {
     fetch(URI, options)
       .then((Response) => Response.json())
       .then((data) => {
-        alert(JSON.stringify(data));
+        Swal.fire({
+icon: 'success',
+text: 'Restaurant registrado'
+})
       });
   };
-  /*   const [profileImage, setProfileImage] = useState(imguser);
-  const handleImageUpload = (event) => {
-    const imageFile = event.target.files[0];
-    setProfileImage(URL.createObjectURL(imageFile));
-  }; */
+  
   return (
     <>
       <div class="registration-form-container">
