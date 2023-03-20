@@ -6,13 +6,13 @@ function Slider() {
     <div id="carouselExample" class="carousel slide carruselito">
     <div class="carousel-inner">
         <div class="carousel-item active">
-        <img src="src/assets/Img/Slider5.jpg" class="d-block w-100 imagencita" alt=""/>
+        <img src="src/assets/Img/Fondo1.jpg" class="d-block w-100 imagencita" alt=""/>
         </div> 
         <div class="carousel-item">
-        <img src="src/assets/Img/Slider3.jpg" class="d-block w-100 imagencita" alt=""/>
+        <img src="src/assets/Img/Fondo5.jpg" class="d-block w-100 imagencita" alt=""/>
         </div>
         <div class="carousel-item">
-        <img src="src/assets/Img/Slider4.jpg" class="d-block w-100 imagencita" alt=""/>
+        <img src="src/assets/Img/Fondo8.jpg" class="d-block w-100 imagencita" alt=""/>
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">

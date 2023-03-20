@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const Titulo = styled.h1`
     font-weight: Roboto;
-    color: #00000;
+    color: #FFAE00;
 font-size: 2rem;
 font-style: italic;
 font-weight: 700;

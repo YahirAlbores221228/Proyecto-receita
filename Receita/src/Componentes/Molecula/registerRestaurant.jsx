@@ -69,6 +69,11 @@ text: 'Restaurant registrado'
             <label for="password">Password</label>
             <input type="password" id="password" name="Contrasena" required />
           </div>
+<label for="file-input" class="drop-container">
+  <span class="drop-title">Subir menu</span>
+  <input type="file" accept="image/*" required="" id="file-input"/>
+</label>
+
 
           <button type="submit" onClick={registro}>
             Confirmar

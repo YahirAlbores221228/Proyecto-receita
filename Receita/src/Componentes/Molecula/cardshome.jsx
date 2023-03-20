@@ -8,7 +8,7 @@ function Cardshome() {
     return (  
 
 <>
-<hr />
+
 <div className='Container-cards'>
 <Titulo>BIENVENIDO AL PARAISO GASTRONOMICO MEXICANO</Titulo>
 <div className='Container-padres'>
@@ -20,10 +20,14 @@ function Cardshome() {
 
 <div className='Cards-content'>
 <div className='Cards-titulo'>
+<span className='date'>10/03/2023</span>
 <Titulo>Comida mexicana</Titulo>
 </div>
 <div className='Cards-parrafo'>
 <p>La mejor variedad de platillos mexicanos</p>
+</div>
+<div className='Vistas'>
+<div className='View'>1000 view</div>
 </div>
 </div>
 
@@ -35,12 +39,16 @@ function Cardshome() {
 
 <div className='Cards-content'>
 <div className='Cards-titulo'>
+<span className='date'>10/03/2023</span>
 <Titulo>Restaurante</Titulo>
 </div>
+
 <div className='Cards-parrafo'>
 <p>Descubre los mejores restaurantes de Méxicos</p>
 </div>
-
+<div className='Vistas'>
+<div className='View'>1000 view</div>
+</div>
 </div>
 
 </div>
@@ -51,10 +59,14 @@ function Cardshome() {
 
 <div className='Cards-content'>
 <div className='Cards-titulo'>
+<span className='date'>10/03/2023</span>
 <Titulo>Proceso</Titulo>
 </div>
 <div className='Cards-parrafo'>
 <p>Recetas mexicanas con instrucciones detalladas.</p>
+</div>
+<div className='Vistas'>
+<div className='View'>1000 view</div>
 </div>
 </div>
 

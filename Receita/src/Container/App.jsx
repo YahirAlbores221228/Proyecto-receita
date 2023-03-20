@@ -14,7 +14,7 @@ import Categoria from "../Pages/Categoria";
 import About from "../Pages/About";
 import Categoriaa from "../Pages/Categoriaingrediente";
 import Registroderecetas from "../Pages/Registrorecetas";
-
+import Recetas from "../Pages/Recetas";
 function App() {
   /*   const [isLoged, setIsLoged] = useState(false); */
   return (
@@ -32,6 +32,7 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/Categoriaa" element={<Categoriaa />} />
  <Route path="/Registrorecetas"element={<Registroderecetas/>} />
+ <Route path="/Recetas"element={<Recetas/>} />
       </Routes>
       {/* </UserContext.Provider> */}
     </BrowserRouter>
