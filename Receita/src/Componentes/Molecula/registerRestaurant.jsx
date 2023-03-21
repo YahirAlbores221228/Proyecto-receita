@@ -32,7 +32,6 @@ text: 'Restaurant registrado'
 })
       });
   };
-  
   return (
     <>
       <div class="registration-form-container">
@@ -73,8 +72,6 @@ text: 'Restaurant registrado'
   <span class="drop-title">Subir menu</span>
   <input type="file" accept="image/*" required="" id="file-input"/>
 </label>
-
-
           <button type="submit" onClick={registro}>
             Confirmar
           </button>

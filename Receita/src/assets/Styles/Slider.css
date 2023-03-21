@@ -1,37 +1,12 @@
-.Contenedor-slider{
-background-color: rgb(0, 0, 0);
-width: auto;
-}
-.hola{
-font-size: 2rem;
-position: absolute;
-width: 100%;
-text-align: center;
-color: rgb(255, 255, 255);
-top: 35%;
-}
-.titulo-slider{
-text-transform: uppercase;
-font-family: 'Roboto';
-font-style: normal;
-line-height: 75px;  
-}
-@media (max-width: 700px){
-.hola  {
-font-size: 1.6rem;
-margin: 30% auto;
-text-align: center;
-}
-}
-.Slider-frame .img{
-width: 100%;
-height: 600px;
-}
 .carruselito{
   width: 100%;
-
-  height: 50%;
+height: 100%;
+font-size: 2rem;
+font-family: 'Roboto';
+font-style: normal;
+line-height: 75px; 
 }
 .imagencita{
-  height: 650px;
+  height: 580px;
+object-fit: cover;
 }

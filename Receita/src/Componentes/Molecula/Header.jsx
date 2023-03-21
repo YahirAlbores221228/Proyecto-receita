@@ -12,7 +12,8 @@ text-decoration:none;
 `;
 
 return ( 
-<header className='Header'>
+
+ <header className='Header'>
 <div>
 <img className='Logo' src={Logo}/>
 </div>
@@ -33,7 +34,7 @@ return (
 <input   placeholder='Buscar restaurante'  className='Search-input' type="Search" />
  <FaSistrix  className='icono'/>
 </div>
-</header>
+</header> 
  );
 }
 export default Header;

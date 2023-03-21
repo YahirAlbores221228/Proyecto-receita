@@ -8,7 +8,8 @@ font-style: normal;
 font-size: 1.6rem;
 background-image: url(../Img/pexels-cats-coming-406152.jpg);
 background-size: cover;
-height: 100%;
+background-repeat: no-repeat;
+height: auto;
 }
 a{
 font-size: 1.2rem;
@@ -20,6 +21,7 @@ font-size: 1.2rem;
       text-align: center;
     background-color: #f7f7f76f;
 margin-bottom: 23px;
+
   }
   h2 {
       margin-top: 0;
@@ -42,10 +44,7 @@ margin-bottom: 23px;
         background-color: transparent;
         outline: none;
   }
-  img{
-    width: 30%;
-    height: 30%;
-  }
+  
   button[type="submit"] {
       background-color: #EEBD89;
       color: #ffffff;
@@ -113,3 +112,96 @@ margin-bottom: 23px;
   transition: background .2s ease-in-out;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+ .registration-form-container{
+background-size: 100% 100%;
+}
+ .registration-form {
+      padding: 10px;
+      border-radius: 2px;
+      margin-bottom: 12px;
+      width: 60%;
+      height: 70%;
+font-size: 2rem;
+margin: 10px 10px 10px 10px;
+  }
+ .form-group {
+      margin-bottom: 10px;
+      text-align: left;
+      font-size: 2rem;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+      padding: 10px;
+  }
+   button[type="submit"] {
+      padding: 10px;
+      margin-bottom: 3px;
+      font-size: 1.6rem;
+  }
+.drop-container {
+  gap: 6px;
+  margin-top: 2rem;
+margin-bottom: 12px;
+}
+.drop-title {
+  font-size: 2rem;
+}
+#file-input {
+  padding: 3px 3px;
+}
+#file-input::file-selector-button {
+  margin-right: 5px;
+  padding: 10px 15px;
+}
+}
+@media screen and  (max-width: 767px) {
+ .registration-form-container{
+background-size: 100% 100%;
+}
+ .registration-form {
+      padding: 10px;
+      border-radius: 2px;
+      margin-bottom: 12px;
+      width: 90%;
+      height: 80%;
+margin: 10px 10px 10px 10px;
+  }
+ .form-group {
+      margin-bottom: 5px;
+      text-align: left;
+      font-size: 1rem;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+      padding: 7px;
+  }
+   button[type="submit"] {
+      background-color: #EEBD89;
+   
+      padding: 10px 8px;
+      margin-bottom: 2px;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+  }
+.drop-container {
+  gap: 5px;
+  padding: 5px;
+  margin-top: 2rem;
+margin-bottom: 10px;
+}
+.drop-title {
+  font-size: 1rem;
+}
+#file-input {
+  padding: 1px;
+}
+#file-input::file-selector-button {
+  margin-right: 2px;
+  padding: 10px 15px;
+}
+}
