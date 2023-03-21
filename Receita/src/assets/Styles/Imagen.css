@@ -8,10 +8,12 @@ font-family: 'Roboto';
 font-style: normal;
 font-size:50px;
 height: 90vh;
+width: 100%;
 color: #ffae00 ;
 border: 1px none;
 background: url(../Img/fondo-imge.jpg) no-repeat;
-background-size: cover;
+background-size:cover;
+object-fit: cover;
 }
 h1{
 color: #000000;

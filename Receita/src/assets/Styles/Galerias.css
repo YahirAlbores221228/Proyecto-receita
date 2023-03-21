@@ -75,12 +75,19 @@ cursor: pointer;
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .galeria-informacion .Informacion-receta ,.galeria-informacion .Nombre-galeria,
 .Frase-galeria .Titulo-galeria {
-font-size: 1.5rem;
+font-size: 1.3rem;
 }  
+.Imges-galerias{
+height: 200px;
+}
 }
 @media screen and  (max-width: 767px) {
   .galeria-informacion .Informacion-receta, .galeria-informacion .Nombre-galeria,
 .Frase-galeria .Titulo-galeria {
 font-size: 1rem;
 }  
+
+.Imges-galerias{
+height: 180px;
+}
 }

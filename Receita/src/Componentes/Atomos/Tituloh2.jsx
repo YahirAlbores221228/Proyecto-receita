@@ -9,4 +9,5 @@ font-size: 1.6rem;
 line-height: 42px;
 text-align: center;
 `;
+
 export default Titulocategoria;
