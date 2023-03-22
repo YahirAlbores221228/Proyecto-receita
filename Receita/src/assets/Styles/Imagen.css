@@ -6,13 +6,13 @@ justify-content: center;
 text-align: center;
 font-family: 'Roboto';
 font-style: normal;
-font-size:50px;
+font-size:3rem;
 height: 90vh;
 width: 100%;
 color: #ffae00 ;
 border: 1px none;
 background: url(../Img/fondo-imge.jpg) no-repeat;
-background-size:cover;
+background-size:100% 100%;
 object-fit: cover;
 }
 h1{
@@ -20,10 +20,17 @@ color: #000000;
 font-size: 4rem;
 }
 
-@media (max-width: 700px){
-.titulo-nav {
-font-size: 4rem;
-width: auto;
+
+@media screen and (min-width:320px)  and  (max-width: 767px) {
+.titulo-nav{
+
+font-size:2rem;
+color:white;
+}
+.Container-nav{
+background-size:cover;
+height: 50vh;
+
 }
 }
 

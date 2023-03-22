@@ -8,7 +8,7 @@ function Formlogin() {
   /**************************************************************************** */
 const form = useRef();
 const navigate = useNavigate();
-const handlerClick = (e) => {
+const handlerClickhome = (e) => {
   e.preventDefault();
   const formData = new FormData(form.current);
   const Nombre = formData.get("Nombre");
@@ -30,7 +30,7 @@ const handlerClick = (e) => {
         if (data.message == "Usuario no encontrado") {
           Swal.fire(data.message, "No hemos encontrado el usuario", "error");
         }
-        if (data.message == "Has iniciado sesion") {
+        if (data.message ="Has iniciado sesion") {
           console.log("La sesión ha sido iniciada.");
           Swal.fire(data.message, "Has click para continuar", "success");
           navigate("/Home");
@@ -42,7 +42,7 @@ const handlerClick = (e) => {
 
   const handlerClickRg = (e) => {
     e.preventDefault();
-    navigate("/RegisterP")
+    navigate("/RegiseterP")
   }
 
   return (
@@ -56,22 +56,20 @@ const handlerClick = (e) => {
             <input
               type="text"
               name="Nombre"
-            
             /> 
           </div>
 
           <div class="form-group">
             <label for="password">Password</label>
             <input
-          
               type="password"
               name="Contrasena"
         
               />
           </div>
-          <button onClick={handlerClick} type="submit"> Confirmar </button>
+          <button onClick={handlerClickhome} type="submit">Confirmar</button>
           <div>
-            <Link to="RegisterP">
+            <Link to="RegiseterP">
               <a onClick={handlerClickRg}>No tienes cuenta? registrate aqui</a>
             </Link>
           </div>

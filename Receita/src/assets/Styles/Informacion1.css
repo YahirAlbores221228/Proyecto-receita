@@ -24,4 +24,20 @@ line-height: 24px;
 height: auto;
 width: auto;
 }
-
+@media screen and (min-width:320px)  and  (max-width: 767px) {
+.Parrafo1{
+font-size: 1.5rem;
+text-align: justify;
+}
+.Parrafo2{
+font-size: 1rem;
+}
+.Receitaa{
+font-size: 2rem;
+margin-top: 10px;
+}
+.Container-titulo{
+width: auto;
+margin: 10px;
+}
+}
