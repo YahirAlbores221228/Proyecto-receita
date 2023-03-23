@@ -59,9 +59,7 @@ text-decoration:none;
 </div>
 </div>
 </div>
-
 <hr/>
-
 <p className='Frase-empresa'>Una empresa que piensa en ti </p>
 </div>
 </footer>

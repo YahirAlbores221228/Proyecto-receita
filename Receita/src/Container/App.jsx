@@ -15,6 +15,7 @@ import About from "../Pages/About";
 import Categoriaa from "../Pages/Categoriaingrediente";
 import Registroderecetas from "../Pages/Registrorecetas";
 import Recetas from "../Pages/Recetas";
+import Favoritos from "../Pages/Favoritos";
 function App() {
   /*   const [isLoged, setIsLoged] = useState(false); */
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/Categoriaa" element={<Categoriaa />} />
  <Route path="/Registrorecetas"element={<Registroderecetas/>} />
  <Route path="/Recetas"element={<Recetas/>} />
+<Route path="/Favoritos"element={<Favoritos/>} />
       </Routes>
       {/* </UserContext.Provider> */}
     </BrowserRouter>

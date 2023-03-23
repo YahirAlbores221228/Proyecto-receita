@@ -6,6 +6,7 @@ font-weight: 400px;
 line-height: 28px;
 text-align: center;
 padding-top: 23px;
+margin-top: auto;
 }
 .Footer-logo{
 width: 10em;
@@ -24,7 +25,6 @@ flex-direction: column;
 }
 h4{
 font-size: 1.4rem;
-
 }
 label{
 font-size: 1rem;

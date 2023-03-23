@@ -23,10 +23,9 @@ function VerRestaurantes() {
   return (
     <>
       <div className="for-convenios-info">
-        <div></div>
         <div className="infoText">
-          <h1>NUESTROS CONVENIOS</h1>
-          <p htmlFor="">
+          <h1 className="infor-text-convenios">NUESTROS CONVENIOS</h1>
+          <p>
             Es importante informar a nuestros clientes acerca de los convenios
             que tenemos con restaurantes y los servicios que ofrecemos, para que
             puedan visitarnos y disfrutar de un buen día con amigos, familia o

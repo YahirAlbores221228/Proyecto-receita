@@ -2,21 +2,53 @@
     display: flex;
     flex-direction: row;
 }
-#imgInfo{
-    width: 100%;
-    height: 100%;
-}
+
 .infoText{
 text-align: center;
 align-items: center;
+font-family: 'Roboto';
+font-size: 1.9rem;
+margin-bottom: 25px;
+height: 300px;
+margin: 20px;
+}
+.infor-text-convenios{
+font-size: 4rem;
 }
 .Convenios{
-top: 671px;
 height: auto;
-font-size: 2rem;
-padding: 114px;
-margin-bottom: 23px;
+padding: 10px;
 text-align: center;
-background-color: rgba(255, 228, 196, 0.282);
-border-radius: 2px;
+background-color: black;
+color: rgb(255, 255, 255);
+
+}
+
+.Nombre{
+display: flex;
+gap: 10px;
+flex-direction: column;
+font-size: 3rem;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;   
+line-height: 60px;
+margin-bottom: 70px;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+ .infoText{
+text-align: justify;
+align-items: center;
+font-size: 1rem;
+margin:10px;
+}
+.infor-text-convenios{
+font-size: 1.7rem;
+text-align: center;
+}
+.Nombre{
+font-size: 1.4rem;
+font-family: 'Poppins';
+
+}
 }

@@ -1,9 +1,8 @@
 import '../../assets/Styles/Button.css'
-function Buttonregister({Texto,registro}) {
+function Buttonregister({Entrar}) {
     return (
 <>
-<button className='button'>{Texto}</button> 
-
+<button className='button-categoria'>{Entrar}</button>
 </>
  );
 }

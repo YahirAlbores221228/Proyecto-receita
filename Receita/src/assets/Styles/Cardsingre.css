@@ -5,7 +5,18 @@ background-size: cover;
 display: flex;
 align-items: center;
 justify-content: center;
-text-align: center
+}
+.Fondo-titulo-bienvendida{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 4rem;
+line-height: 75px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
 }
 .container-cards{
 font-family: 'Roboto';

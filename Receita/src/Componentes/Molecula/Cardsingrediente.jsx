@@ -5,7 +5,7 @@ function Cards() {
     return (  
 <>
 <nav className='fondo-cards'>
-<h1>CATEGORIA POR PRECIO</h1>
+<h1 className='Fondo-titulo-bienvendida'>Bienvenido a nuestra categoria de recetas</h1>
 </nav>
 
 <div className='container-cards'>

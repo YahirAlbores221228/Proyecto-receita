@@ -2,7 +2,7 @@ import '../../assets/Styles/categoria.css'
 import categoria from '../../assets/Img/img-plato.svg'
 import porIngrediente from "../../assets/Img/porIngrediente.png";
 import porPrecio from "../../assets/Img/Pesos.png";
-import Buttonregister from "../Atomos/Buttonregister"
+import Buttonentrar from "../Atomos/Buttoncategoria"
 import Titulocategoria from '../Atomos/Titulocategoria';
 import Tituloh2 from "../Atomos/Tituloh2"
 import Parrafos from "../Atomos/parrafos"
@@ -22,18 +22,18 @@ function Categoria() {
 
         <div className='cards-categoria'>
           <div class="card">
-            <img src={porIngrediente} alt="Imagen de ejemplo" />
+            <img className='Img-categoria' src={porIngrediente} alt="Imagen de ejemplo" />
             <hr />
             <Tituloh2>CATEGORIA POR INGREDIENTE</Tituloh2>
             <p className='Description-categoria'>Recetas con tus ingredientes ingredientes a disponibilidad</p>
-              <Buttonregister Texto="Entrar"></Buttonregister>
+             <Buttonentrar Entrar="Entrar"/>
           </div>
           <div class="card">
-            <img src={porPrecio} alt="Imagen de ejemplo" />
+            <img className='Img-categoria' src={porPrecio} alt="Imagen de ejemplo" />
             <hr />
            <Tituloh2>CATEGORIA POR PRECIO</Tituloh2>
             <p className='Description-categoria'>Recetas con tus ingredientes ingredientes a disponibilidad</p>
-              <Buttonregister Texto="Entrar"></Buttonregister>
+                  <Buttonentrar Entrar="Entrar"/>
           </div>
         </div>
       </>

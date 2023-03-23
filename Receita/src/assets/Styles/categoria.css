@@ -43,7 +43,7 @@ align-items: center;
 .cards-categoria{
 display: flex;
 flex-wrap: wrap;
-gap: 15px;
+gap: 23px;
 margin-bottom: 20px;
 justify-content:space-evenly;
 padding: 25px;
@@ -51,7 +51,7 @@ filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.4));
 }
 .card {
     width: 300px;
-    height: 350px;
+    height: auto;
     border: 1px solid #ccc;
     background-color: #FFF1D7;
     padding: 20px;
@@ -61,9 +61,10 @@ filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.4));
     transform: scale(1.05);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
-.card img {
+.card .Img-categoria {
     width: 40%;
     height: auto;
+margin: 0 auto;
 }
 .card hr {
     border: 1px solid #000000;

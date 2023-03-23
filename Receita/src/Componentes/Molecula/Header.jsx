@@ -28,7 +28,7 @@ return (
             <input type="checkbox" id="menu" class="nav__input"/>
 
             <div class="nav__menu">
-<StyledLink to="#">
+<StyledLink to="/Home">
                 <a href="#" class="nav__item">Home</a>
 </StyledLink>
          <StyledLink to="/Convenios">
@@ -40,6 +40,9 @@ return (
 <StyledLink to="/About">
                 <a href="#" class="nav__item">Nosotros</a>
 </StyledLink>
+<StyledLink to="/Favoritos">
+                <a href="#" class="nav__item">Favoritos</a>
+</StyledLink>
 
             </div>
         </div>
@@ -47,28 +50,6 @@ return (
     </nav>
 </>
 
-//  <header className='Header'>
-// <div>
-// <img className='Logo' src={Logo}/>
-// </div>
-// <div className='Container-label'>
-// <Label  msn="Home"/>
-// <StyledLink to="/Convenios">
-// <Label msn="Convenios"/>
-// </StyledLink>
-// <StyledLink to="/RestauranteP">
-// <Label msn="Registro de restaurante "/>
-// </StyledLink>
-// <StyledLink to="/About">
-// <Label  msn="Nosotros"/>
-// </StyledLink>
-// <Label  msn="Favoritos"/>
-// </div>
-// <div className='Search'>
-// <input   placeholder='Buscar restaurante'  className='Search-input' type="Search" />
-//  <FaSistrix  className='icono'/>
-// </div>
-// </header> 
  );
 }
 export default Header;

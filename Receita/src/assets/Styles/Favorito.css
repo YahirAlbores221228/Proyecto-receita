@@ -1,0 +1,6 @@
+.Container-favorito{
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 500px;
+}
