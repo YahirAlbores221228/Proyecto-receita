@@ -5,8 +5,6 @@ function Informacion2() {
 
 <>
 <div className="Container-informacio2">
-
-
 <div className="Container-informacions">
 <p>Con nosotros seras un gran cocinera, receita pone a disponibilidad toda la gastronomia mexicana</p>
 <p className="container-frase-oferta">¡Registrate y disfruta lo que tenemos para ti!</p>

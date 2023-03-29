@@ -23,7 +23,7 @@ justify-content: center;
 flex-wrap: wrap;
 align-items: center;
 }
-.hij{
+.Frase-motivadore{
 font-size: 2rem;
 text-align: center;
 }
@@ -35,12 +35,46 @@ width: 500px;
 text-align: center;
 font-size: 2rem;
 margin: 2px;
+font-family: 'Roboto';
 margin-bottom: 50px;
 }
 
 .Receita-titulo{
+text-align: center;
 font-size: 4rem;
 margin: auto;
 font-family: 'Roboto';
 color: #ffae00;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+.nosotros{
+font-size: 2rem;
+}
+.contenedor-imge-about{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.Imagen-plato{
+width:100%;
+height:80vh;
+}
+.Receita-titulo{
+font-size: 2rem;
+margin: auto;
+text-align: center;
+}
+.Receita
+{
+text-align:justify;
+font-size: 1rem;
+margin: 8px;
+margin-bottom: 30px;
+}
+.Frase-motivadore{
+font-size: 1rem;
+text-align: center;
+}
 }

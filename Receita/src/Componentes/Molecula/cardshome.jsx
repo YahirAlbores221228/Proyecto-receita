@@ -3,8 +3,13 @@ import Titulo from "../Atomos/TItulo";
 import Mexicana from "../../assets/Img/mexicanas.jpg"
 import restaurante from "../../assets/Img/restaurante.jpg"
 import preparacion from "../../assets/Img/preparacion.jpg"
-
+import {Link} from "react-router-dom";
+import styled from 'styled-components';
 function Cardshome() {
+
+  const StyledLink = styled(Link)`
+text-decoration:none;
+`;
     return (  
 
 <>
@@ -69,8 +74,12 @@ function Cardshome() {
 <div className='View'>1000 view</div>
 </div>
 </div>
-
 </div>
+</div>
+<div className='direccion-recetas'>
+<StyledLink to="/Recetas">
+<p className='direccion-a' >Ir a recetas</p>
+</StyledLink>
 </div>
 </div>
 </>

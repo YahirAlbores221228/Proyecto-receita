@@ -6,7 +6,12 @@ import Buttonentrar from "../Atomos/Buttoncategoria"
 import Titulocategoria from '../Atomos/Titulocategoria';
 import Tituloh2 from "../Atomos/Tituloh2"
 import Parrafos from "../Atomos/parrafos"
+import {Link} from "react-router-dom";
+import styled from 'styled-components';
 function Categoria() {
+  const StyledLink = styled(Link)`
+text-decoration:none;
+`;
     return (
       <>
 
@@ -26,7 +31,9 @@ function Categoria() {
             <hr />
             <Tituloh2>CATEGORIA POR INGREDIENTE</Tituloh2>
             <p className='Description-categoria'>Recetas con tus ingredientes ingredientes a disponibilidad</p>
-             <Buttonentrar Entrar="Entrar"/>
+     <StyledLink to="/Categoriaingredientes">      
+<Buttonentrar Entrar="Entrar"/>
+</StyledLink>
           </div>
           <div class="card">
             <img className='Img-categoria' src={porPrecio} alt="Imagen de ejemplo" />

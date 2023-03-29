@@ -56,6 +56,22 @@ width: 100%;
 font-size: 1.4rem;
 margin-bottom: 23px;
 }
+.direccion-recetas{
+display: flex;
+justify-content:center ;
+margin-bottom: 15px;
+
+}
+.direccion-a{
+font-size: 1.7rem;
+width: 250px;
+text-align: center;
+background-color: #fb993ee5;
+padding: 10px 10px ;
+border-radius: 15px;
+cursor: pointer;
+color: #ffffff;
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
  .Cards-container{
 width: 290px;
