@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 /* import UserContext from "../context/userContext";
 import { useState } from "react"; */
-
 import "../assets/Styles/Body.css";
 import Convenios from "../Pages/Convenios";
 import Ladingpage from "../Pages/Lading-page";
@@ -17,6 +16,7 @@ import Registroderecetas from "../Pages/Registrorecetas";
 import Recetas from "../Pages/Recetas";
 import Favoritos from "../Pages/Favoritos";
 import Menus from "../Pages/Menus"
+import CategoriaIngredientes from "../Pages/Categoriaingrediente"
 function App() {
   /*   const [isLoged, setIsLoged] = useState(false); */
   return (
@@ -37,6 +37,7 @@ function App() {
  <Route path="/Recetas"element={<Recetas/>} />
 <Route path="/Favoritos"element={<Favoritos/>} />
 <Route path="/Menus"element={<Menus/>} />
+<Route path="/Categoriaingredientes" element={<CategoriaIngredientes />} />
       </Routes>
       {/* </UserContext.Provider> */}
     </BrowserRouter>

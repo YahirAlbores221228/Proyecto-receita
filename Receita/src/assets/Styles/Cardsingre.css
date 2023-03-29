@@ -1,3 +1,83 @@
+
+
+
+
+/* /*Menu desplegable*/
+/* .nav__containerC {
+    display: flex;
+    height: 10%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__menuC {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+}
+
+.nav__itemC {
+    color: #000000;
+    text-decoration: none;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.nav__itemC:hover {
+    color: white;
+}
+
+.nav__itemC::after {
+    content: "";
+    display: block;
+    width: 100%;
+    background: white;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .5s;
+
+}
+
+.nav__itemC:hover {
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+ .nav__labelC {
+     display: block;
+     cursor: pointer;
+ }
+
+ .nav__menuC {
+     position: fixed;
+     top: 80px;
+     bottom: 0;
+     background: #000000;
+     width: 100%;
+     left: 0;
+     display: flex;
+     justify-content: space-evenly;
+     flex-direction: column;
+     align-items: center;
+     clip-path: circle(0 at center);
+     transition: clip-path 1s ease-in-out;
+ }
+
+ .nav__itemC {
+     color: white;
+ }
+
+ .nav__inputC:checked+.nav__menuC {
+     clip-path: circle(100% at center);
+ }
+
+  */
+
+
+
+.conteneder-cards{
+display: flex;
+}
 .fondo-cards{
 height: 90vh;
 background: url(../Img/cards-fondo.jpg) no-repeat;
@@ -18,17 +98,17 @@ text-align: center;
 text-transform: uppercase;
 }
 .container-cards{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
 font-family: 'Roboto';
 font-size: 1.3rem;
 width: 100%;
 height: 100%;
 padding-top: 23px;
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
 gap: 23px;
 }
-.cards{
+.cardss{
 height:100%;
 width: auto;
 background-color: #FFF1D7;
@@ -37,8 +117,9 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.55);
 transition: all .3s;
 padding: 3px 3px;
 }
-.cards:hover{
+.cardss:hover{
 transform: scale(0.9);
+background-color: #F7D7B0;
 }
 .imgen{
 width: auto;
@@ -55,7 +136,6 @@ border-radius: 10px;
 .informacion{
 display: flex;
 justify-content: center;
-justify-content: space-around;
 }
 .Nombre-receta{
 padding: 5px;
@@ -108,7 +188,7 @@ color: #BE8952;
 }
 .Metodo_de_pago{
 height: 300px;
-}
+} 
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
 .fondo-cards{
