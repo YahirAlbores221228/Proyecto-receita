@@ -13,13 +13,12 @@ function Bienvenidareceta() {
 <div className="Conteiner-bienvenida">
 
 <div className="Container-Titulo">
-<Tituloreceta>Ofrecemos recetas mexicanas seguras al 100% en Receita.</Tituloreceta>
+<h2 className="titulo-recetas">Ofrecemos recetas mexicanas seguras al 100% en Receita.</h2>
 <Link to="/Categoria">
-   <p class="cta">
-         Ir a categoria
-        </p>
+   <p class="cta">  Ir a categoria </p>
 </Link>
 </div>
+
 <div className="Container-imge-aguacate">
 <img className="aguacate" src={Aguacate} alt="" />
 </div>

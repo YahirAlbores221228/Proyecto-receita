@@ -1,16 +1,24 @@
 .Conteiner-bienvenida{
-width: 100%;
+display: flex;
+align-items: center;
 height: 650px;
 background-image: url(../Img//wavee.svg);
 background-size:cover;
 margin-bottom: 25px;
-background-color:#FFF1D7;
-position: relative;
+
+}
+.titulo-recetas{
+ font-family: 'Roboto';
+font-style: normal;
+font-weight: 1000;
+font-size: 3rem;
+line-height: 75px;
 display: flex;
 align-items: center;
+text-transform: uppercase;
 }
 .Container-Titulo{
-width: 50%;
+width: 60%;
 margin-left: 35px;
 }
 .cta{
@@ -23,15 +31,42 @@ margin-left: 35px;
     cursor: pointer;
     background-color: #FFAE00;
 }
+.cta:hover{
+background-color: rgba(21, 255, 0, 0.573);
+}
 .Container-imge-aguacate{
-    position: absolute;
-    right: 0;
-    top: 50%;
-    object-fit: cover;
-    transform: translateY(-50%);
+    width: 40%;
+    object-fit: cover; 
 }
 .aguacate{
-width: 630px;
-height: 630px;
+width: 100%;
+height: 100%;
 display: block;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+.Container-Titulo{
+width: 70%;
+margin-left: 4px;
+}
+.Container-imge-aguacate{
+    object-fit: cover; 
+display: block;
+width: 30%;
+}
+.cta{
+width: auto;
+font-size: 1rem;
+padding: 10px 10px;
+}
+.Conteiner-bienvenida{
+height: 400px;
+background-image: url(../Img//wavee.svg);
+background-size:cover;
+margin-bottom: 10px;
+}
+.titulo-recetas{
+ font-size: 1rem;
+margin-bottom: 1px;
+}
 }

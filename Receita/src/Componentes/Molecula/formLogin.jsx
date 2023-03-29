@@ -63,9 +63,7 @@ const handlerClickhome = (e) => {
             <label for="password">Password</label>
             <input
               type="password"
-              name="Contrasena"
-        
-              />
+              name="Contrasena"/>
           </div>
           <button onClick={handlerClickhome} type="submit">Confirmar</button>
           <div>

@@ -37,17 +37,6 @@ text: 'Restaurant registrado'
       <div class="registration-form-container">
         <form class="registration-form" ref={formDataF}>
           <h2>ALTA DE RESTAURANTE</h2>
-          {/* <div>
-            <label htmlFor="profile-image-upload">
-              <img src={profileImage} alt="Profile" className="profile" />
-            </label>
-            <input
-              type="file"
-              id="profile-image-upload"
-              onChange={handleImageUpload}
-              style={{ display: "none" }}
-            />
-          </div> */}
 
           <div class="form-group">
             <label for="name">Nombre del restaurante</label>
@@ -70,7 +59,7 @@ text: 'Restaurant registrado'
           </div>
 <label for="file-input" class="drop-container">
   <span class="drop-title">Subir menu</span>
-  <input type="file" accept="image/*" required="" id="file-input"/>
+  <input type="file"  required id="file-input" name="Imege"/>
 </label>
           <button type="submit" onClick={registro}>
             Confirmar

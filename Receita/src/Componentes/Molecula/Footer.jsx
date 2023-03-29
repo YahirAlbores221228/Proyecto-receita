@@ -2,10 +2,6 @@ import '../../assets/Styles/Footer.css'
 import Logo from '../../assets/Img/Logo.png'
 import paypal from '../../assets/Img/Paypal.png'
 import Subtitulo from '../Atomos/Subtituloh4'
-import { FaInstagram } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { FaPhoneAlt } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
 import styled from 'styled-components';
 import {Link} from "react-router-dom";
 
@@ -41,22 +37,19 @@ text-decoration:none;
 <h4>METODO DE PAGO</h4>
 <img className='Logo-asociadas' src={paypal} alt="" />
 </div>
-
 <div>
 <Subtitulo Subtitulo="REDES SOCIALES"/>
+
 <div className='Container-redes'>
-<div>
-<FaInstagram className='Redes'/>
-</div>
-<div>
-<FaFacebook className='Redes'/>
-</div>
-<div>
-<FaPhoneAlt className='Redes'/>
-</div>
-<div>
-<FaTwitter className='Redes'/>
-</div>
+           <a href="#" class="footer__link">
+            <img src="src/assets/Img/twitter.svg" class="footer__icon"/>
+          </a>
+          <a href="https://www.facebook.com/" class="footer__link">
+            <img src="src/assets/Img/fb.svg" class="footer__icon"/>
+          </a>
+          <a href="#" class="footer__link">
+            <img src="src/assets/Img/instagram.svg" class="footer__icon"/>
+          </a>
 </div>
 </div>
 <hr/>

@@ -46,8 +46,8 @@ margin-bottom: 23px;
   }
   
   button[type="submit"] {
-      background-color: #EEBD89;
-      color: #ffffff;
+      background-color: #000000;
+     color: #FFAE00;
       padding: 10px 20px;
       margin-bottom: 15px;
       border: none;
@@ -55,12 +55,13 @@ margin-bottom: 23px;
       font-size: 1.3rem;
       border-radius: 5px;
       cursor: pointer;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+line-height: 42px;
+font-variant: all-small-caps;
       transition: all 0.3s ease;
   }
-  button[type="submit"]:hover {
-      background-color: #000000b4;
-  }
-
 .drop-container {
   background-color: #ffffffc7;
   position: relative;
@@ -78,11 +79,9 @@ margin-bottom: 23px;
 margin-bottom: 23px;
   transition: background .2s ease-in-out, border .2s ease-in-out;
 }
-
 .drop-container:hover .drop-title {
   color: #222;
 }
-
 .drop-title {
   color: #444;
   font-size: 20px;
@@ -90,7 +89,6 @@ margin-bottom: 23px;
   text-align: center;
   transition: color .2s ease-in-out;
 }
-
 #file-input {
   width: 350px;
   max-width: 100%;
@@ -100,7 +98,6 @@ margin-bottom: 23px;
   border-radius: 10px;
   border: 1px solid rgba(8, 8, 8, 0.288);
 }
-
 #file-input::file-selector-button {
   margin-right: 20px;
   border: none;
@@ -111,7 +108,6 @@ margin-bottom: 23px;
   cursor: pointer;
   transition: background .2s ease-in-out;
 }
-
 @media screen and (min-width: 768px) and (max-width: 1023px) {
  .registration-form-container{
 background-size: 100% 100%;
@@ -179,8 +175,7 @@ margin: 10px 10px 10px 10px;
       padding: 7px;
   }
    button[type="submit"] {
-      background-color: #EEBD89;
-   
+      background-color: #020202;
       padding: 10px 8px;
       margin-bottom: 2px;
       font-size: 1.2rem;

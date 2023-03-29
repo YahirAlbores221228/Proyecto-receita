@@ -4,8 +4,7 @@ function Favoritos() {
 
 <>
 <div className='Container-favorito'>
-
-
+<img src="" alt="" />
 </div>
 </>
 
