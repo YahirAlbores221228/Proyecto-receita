@@ -14,7 +14,6 @@ text-decoration:none;
 `;
     return (
       <>
-
         <div className="Categoria-1-info">
           <div className="plato">
            <img className='Categoria-img' src={categoria}/>
@@ -24,7 +23,6 @@ text-decoration:none;
             <Parrafos>Ofrecemos dos opciones de servicio: nuestras dos categorías de recetas te permiten buscar tus favoritas por ingredientes o presupuesto.</Parrafos>
             </div>
         </div>
-
         <div className='cards-categoria'>
           <div class="card">
             <img className='Img-categoria' src={porIngrediente} alt="Imagen de ejemplo" />

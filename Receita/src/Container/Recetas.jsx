@@ -1,15 +1,7 @@
 import "../assets/Styles/Cardsingre.css";
-import styled from "styled-components";
-import { Link, useNavigate } from "react-router-dom";
 import favorite from "../assets/Img/icon-favorite.svg"
-
-function Recetas({ Img, Nombre_de_receta, Lugar_de_origen, Precio, Ingredientes, Porcion, Descripcion }) {
-  const StyledLink = styled(Link)`
-    text-decoration: none;
-    `;
+function Recetas({ Img, Nombre_de_receta, Precio, Porcion, Descripcion }) {
   return (
-
-
 <>
 <div className="conteneder-cards">
     <div className="container-cards">
@@ -36,49 +28,9 @@ function Recetas({ Img, Nombre_de_receta, Lugar_de_origen, Precio, Ingredientes,
 <button className='ver'>Ver</button>
 </div>
 <div>
-<img src={favorite} alt="" />
+<img className="Favorito-button" src={favorite} alt="" />
 </div>
 </div>
-
-
-
-
-        {/* <div class="nav__containerC">
-          {
-            <label for="menu" class="nav__labelC">
-              <img src={menu} class="nav__imgC" />
-            </label>
-          }
-   <div>
-            <p>Lugar de origen: {Lugar_de_origen}</p>
-          </div>
-
-          <input type="checkbox" id="menu" class="nav__inputC" />
-
-          <div class="nav__menuC">
-            <StyledLink>
-              <div className="imgen">
-                <img className="imagen" src={Img} alt="" />
-              </div>
-            </StyledLink>
-            <StyledLink>
-              <div>
-                <h2 className="Nombre-receta">{Nombre_de_receta}</h2>
-              </div>
-            </StyledLink>
-            <div>
-              <p>porcion: {Porcion}</p>
-            </div>
-            <StyledLink>
-              <div>
-                <p>Lugar de origen: {Lugar_de_origen}</p>
-              </div>
-            </StyledLink>
-            <StyledLink>
-              <p>pasos: {Descripcion}</p>
-            </StyledLink>
-          </div>
-        </div> */}
       </div>
     </div>
 </div>

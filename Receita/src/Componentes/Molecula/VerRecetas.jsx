@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Recetas from "../../Container/Recetas";
 import "../../assets/Styles/VerRecetas.css";
-
 function VerRecetas() {
   const [recetas, setRecetas] = useState([]);
   const [loading, setLoading] = useState(true);
   const handlerClick = (e) => {
     setLoading(!loading);
   };
-
   useEffect(() => {
     console.log("useEffect");
     fetch("https://receita.iothings.com.mx:3000/Recetas")
@@ -35,7 +33,6 @@ function VerRecetas() {
           </h6>
         </div>
       </div>
-
       <div className="Convenios">
         {loading &&
           recetas.map((receta) => (

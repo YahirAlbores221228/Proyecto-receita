@@ -5,13 +5,10 @@ function Categoria() {
 
     return ( 
 <>
-
 <Headers/>
 <Cards/>
 <Footer/>
 </>
-
-
  );
 }
 

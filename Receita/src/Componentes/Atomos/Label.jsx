@@ -14,9 +14,7 @@ font-size: 20px;
 }
 }
 `;
-
     return ( 
-
 <StyledLabel>{msn}</StyledLabel>
  );
 }

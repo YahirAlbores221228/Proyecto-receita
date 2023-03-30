@@ -12,7 +12,6 @@ function Home() {
 <Sectionhome/>
 <Cardshome/>
 <Footer/>
-
 </>
  );
 }

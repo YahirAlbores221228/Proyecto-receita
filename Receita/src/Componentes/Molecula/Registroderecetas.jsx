@@ -3,7 +3,6 @@ import { useRef } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import Swal from 'sweetalert2';
 function Registroderecetas() {
-
  const formDataF = useRef();
   const navigate = useNavigate();
 const Altareceta = (e) => {
@@ -11,7 +10,6 @@ const Altareceta = (e) => {
     navigate("/Home");
     const formData = new FormData(formDataF.current);
     const URI = "https://receita.iothings.com.mx:3000/Recetas";
-
     let options = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -22,6 +20,7 @@ const Altareceta = (e) => {
         Precio: formData.get("Precio"),
         Descripcion: formData.get("Descripcion"),
         Porcion: formData.get("Porcion"),
+        Img:formData.get("Img"),
       }),
     };
     fetch(URI, options)
@@ -34,48 +33,41 @@ text: 'Receta registrada'
       });
   };
     return (  
-
- 
 <>
  <div class="registration-form-container">
         <form class="registration-form" ref={formDataF}>
-          <h2>Registrar recetas</h2>
-         
-
+          <h2>REGISTRO DE RECETAS</h2>
           <div class="form-group">
             <label>Nombre de la receta</label>
             <input type="text"  name="Nombre_de_receta" required />
           </div>
-
           <div class="form-group">
             <label>Lugar de origen</label>
             <input type="text"  name="Lugar_de_origen" required />
           </div>
-
           <div class="form-group">
             <label>Precio</label>
             <input type="text"  name="Precio" required />
           </div>
-
           <div class="form-group">
             <label>Ingredientes</label>
             <input type="text"  name="Ingredientes" required />
           </div>
-
        <div class="form-group">
             <label>Descripcion</label>
             <input type="text"  name="Descripcion" required />
           </div>
-
             <div class="form-group">
             <label>Porcion</label>
             <input type="text" name="Porcion" required />
           </div>
-
+<label for="file-input" class="drop-container">
+  <span class="drop-title">Imagen de la receta</span>
+  <input type="file"  required id="file-input" name="Img"/>
+</label>
           <button type="submit" onClick={Altareceta}>
             Confirmar
           </button>
-
         </form>
       </div>
 </>

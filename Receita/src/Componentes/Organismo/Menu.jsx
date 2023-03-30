@@ -8,7 +8,12 @@ function Menu() {
 </div>
 </div>
 <div className='Container-imge-menu'>
-<img className='Menus' src="https://fazt-receita-aws.s3.amazonaws.com/Fondo8.jpg" alt="" />
+<div>
+ <img className="Menus" src="https://fazt-receita-aws.s3.amazonaws.com/menu.jpg" />
+</div>
+<div>
+ <img className="Menus" src="https://fazt-receita-aws.s3.amazonaws.com/menu2.jpg" />
+</div>      
 </div>
 </>
 

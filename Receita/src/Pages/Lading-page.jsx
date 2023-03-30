@@ -13,8 +13,6 @@ function Ladingpage () {
 <Informacion2/>
 <Footer/>
 </>
-
-
  );
 }
 

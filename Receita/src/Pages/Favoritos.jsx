@@ -8,8 +8,6 @@ function Favoritos() {
 <Favorito/>
 <Footer/>
 </>
-
-
  );
 }
 

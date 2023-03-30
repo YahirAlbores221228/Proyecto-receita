@@ -3,6 +3,10 @@ import Logo from '../../assets/Img/Logo.png'
 import paypal from '../../assets/Img/Paypal.png'
 import Subtitulo from '../Atomos/Subtituloh4'
 import styled from 'styled-components';
+import instagram from "../../assets/Img/instagram.svg"
+
+import Facebook from "../../assets/Img/fb.svg"
+import Twitter from "../../assets/Img/twitter.svg"
 import {Link} from "react-router-dom";
 
 function Footer(){
@@ -12,12 +16,10 @@ text-decoration:none;
     return (  
 <footer>
 <div className='Container-padre'>
-
 <div className='Container-logo'>
 <img className='Footer-logo' src={Logo} alt="" />
 <p>El mejor sabor esta en México!</p>
 </div>
-
 <div className='Container-empresa'>
 <Subtitulo Subtitulo="EMPRESA"/>
 <StyledLink to="/About">
@@ -30,7 +32,6 @@ text-decoration:none;
 <label>Convenios</label>
 </StyledLink>
 </div>
-
 <div>
 <Subtitulo Subtitulo="ENLACE UTILES"/>
 <label>Ayuda</label>
@@ -39,16 +40,15 @@ text-decoration:none;
 </div>
 <div>
 <Subtitulo Subtitulo="REDES SOCIALES"/>
-
 <div className='Container-redes'>
            <a href="#" class="footer__link">
-            <img src="src/assets/Img/twitter.svg" class="footer__icon"/>
+            <img src={Twitter} class="footer__icon"/>
           </a>
           <a href="https://www.facebook.com/" class="footer__link">
-            <img src="src/assets/Img/fb.svg" class="footer__icon"/>
+            <img src={Facebook} class="footer__icon"/>
           </a>
           <a href="#" class="footer__link">
-            <img src="src/assets/Img/instagram.svg" class="footer__icon"/>
+            <img src={instagram} class="footer__icon"/>
           </a>
 </div>
 </div>

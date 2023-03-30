@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useRef } from "react";
 import Swal from 'sweetalert2';
 import "../../assets/Styles/register.css";
-
 import { Navigate, useNavigate } from "react-router-dom";
 function RegisterRestaurante() {
   const formDataF = useRef();
@@ -12,7 +11,6 @@ function RegisterRestaurante() {
     navigate("/Registrorecetas");
     const formData = new FormData(formDataF.current);
     const URI = "https://receita.iothings.com.mx:3000/restaurante";
-
     let options = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -21,6 +19,7 @@ function RegisterRestaurante() {
         Tipo: formData.get("Tipo"),
         Ubicacion: formData.get("Ubicacion"),
         Contrasena: formData.get("Contrasena"),
+Imege:formData.get("Imege"),
       }),
     };
     fetch(URI, options)
@@ -36,23 +35,19 @@ text: 'Restaurant registrado'
     <>
       <div class="registration-form-container">
         <form class="registration-form" ref={formDataF}>
-          <h2>ALTA DE RESTAURANTE</h2>
-
+          <h2>REGISTRAR RESTAURANTE</h2>
           <div class="form-group">
             <label for="name">Nombre del restaurante</label>
             <input type="text" id="name" name="Nombre" required />
           </div>
-
           <div class="form-group">
             <label for="last-name">Tipo de restaurante</label>
             <input type="text" id="last-name" name="Tipo" required />
           </div>
-
           <div class="form-group">
             <label for="email">Ubicacion</label>
             <input type="text" id="ubicacion" name="Ubicacion" required />
           </div>
-
           <div class="form-group">
             <label for="password">Password</label>
             <input type="password" id="password" name="Contrasena" required />

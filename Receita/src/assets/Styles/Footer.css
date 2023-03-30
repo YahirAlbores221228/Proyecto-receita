@@ -17,7 +17,6 @@ display:flex;
 flex-wrap: wrap;
 gap: 13px;
 justify-content: space-around;
-
 }
 .Container-empresa{
 display: flex;

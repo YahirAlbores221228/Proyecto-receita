@@ -1,16 +1,11 @@
-
 import Recetas from "../../Container/Recetas";
-
 import React, { useState, useEffect } from "react";
-
 function Cards() {
 const [recetas, setRecetas] = useState([]);
     const [loading, setLoading] = useState(true);
-
     const handlerClick = (e) => {
       setLoading(!loading);
     };
-
     useEffect(() => {
       console.log("useEffect");
       fetch("https://receita.iothings.com.mx:3000/Recetas")
@@ -42,7 +37,6 @@ const [recetas, setRecetas] = useState([]);
               />
             ))}
         </div>
-
 </>
 
 );

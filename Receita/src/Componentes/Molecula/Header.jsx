@@ -15,16 +15,13 @@ text-decoration:none;
 return ( 
 <>
  <nav class="nav">
-
         <div class="nav__container">
 <div>
 <img className='Logo' src={Logo}/>
 </div>
-
             <label for="menu" class="nav__label">
                 <img src={menu} class="nav__img"/>
             </label>
-            
             <input type="checkbox" id="menu" class="nav__input"/>
 
             <div class="nav__menu">
@@ -43,10 +40,8 @@ return (
 <StyledLink to="/Favoritos">
                 <a href="#" class="nav__item">Favoritos</a>
 </StyledLink>
-
             </div>
         </div>
-
     </nav>
 </>
 

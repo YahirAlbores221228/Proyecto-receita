@@ -1,5 +1,5 @@
 import '../../assets/Styles/Button.css'
-function Buttonregister({Texto,registro}) {
+function Buttonregister({Texto}) {
     return (
 <>
 <button className='button'>{Texto}</button> 

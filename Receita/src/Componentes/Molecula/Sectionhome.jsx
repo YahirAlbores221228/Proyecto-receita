@@ -5,7 +5,6 @@ function Sectionhome() {
     return ( 
 <>
 <div className="Seccion-home">
-
 <div className="Container-parrafoo">
 <p>En Receita, puedes buscar y guardar tus recetas favoritas para acceder a ellas siempre que quieras. ¡Tendrás tus platillos preferidos al alcance de tu mano!</p>
 <Link to="/Menus">

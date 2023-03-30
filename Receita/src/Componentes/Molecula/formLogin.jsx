@@ -5,7 +5,6 @@ import Swal from 'sweetalert2';
 import "../../assets/Styles/register.css";
 
 function Formlogin() {
-  /**************************************************************************** */
 const form = useRef();
 const navigate = useNavigate();
 const handlerClickhome = (e) => {
@@ -13,7 +12,6 @@ const handlerClickhome = (e) => {
   const formData = new FormData(form.current);
   const Nombre = formData.get("Nombre");
   const Contrasena = formData.get("Contrasena");
-
   if (!Nombre || !Contrasena) {
     Swal.fire("Espera", "Aún no has llenado todos los campos", "warning");
   } else {
@@ -38,19 +36,15 @@ const handlerClickhome = (e) => {
       });
   }
 };
-
-
   const handlerClickRg = (e) => {
     e.preventDefault();
     navigate("/RegiseterP")
   }
-
   return (
     <>
       <div class="registration-form-container">
         <form ref={form} class="registration-form">
           <h2>LOGIN</h2>
-
           <div class="form-group">
             <label for="email">Nombre de usuario</label>
             <input
@@ -58,7 +52,6 @@ const handlerClickhome = (e) => {
               name="Nombre"
             /> 
           </div>
-
           <div class="form-group">
             <label for="password">Password</label>
             <input
@@ -73,7 +66,6 @@ const handlerClickhome = (e) => {
           </div>
         </form>
       </div>
-
     </>
   );
 }

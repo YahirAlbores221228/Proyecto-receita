@@ -1,5 +1,4 @@
 import styled from "styled-components"
-
 const Titulocategoria = styled.p`
  font-family: 'Poppins';
 font-style: normal;

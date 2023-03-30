@@ -13,10 +13,6 @@ function Informacion2() {
 <Ilustracion2/>
 </div>
 </div>
-
-
-
-
 </>
 
 );

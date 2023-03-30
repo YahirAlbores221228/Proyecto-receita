@@ -1,5 +1,4 @@
 import styled from "styled-components"
-
 const Tituloreceta = styled.h2`
   font-family: 'Roboto';
 font-style: normal;

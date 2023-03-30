@@ -1,5 +1,4 @@
 import styled from "styled-components"
-
 const Titulocategoria = styled.h2`
   font-family: 'Roboto';
 color: #FFAE00;
